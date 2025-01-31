@@ -1,0 +1,11 @@
+
+
+#contendorCardsAsignaturas{
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+
+    div{
+        margin: 5px;
+    }
+}
