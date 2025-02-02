@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../estilos/login.css">
     <title>Document</title>
 </head>
 <body>
-    <div id="contenedor">
-        <div id="imagen">
-            <h1>Escuela de brujería</h1>
-            <div id="imagenPrincipal"></div>
-            <button type="button">Registrarse</button>
+    <form class="box">
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" placeholder="e.g. alex@example.com" />
+          </div>
         </div>
-        <div id="login">
-            <div>
-                <h2>Log in</h2>
-                <form action="">
-                    <label for="usuario">Usuario: </label>
-                    <input type="text" name="usuario">
-                    <label for="contraseña">Contraseña:</label>
-                    <input type="password" name="contraseña">
-                    <a href="">Olvidé la contraseña</a>
-                    <input type="submit" value="Acceder">
-                </form>
-            </div>
+      
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control">
+            <input class="input" type="password" placeholder="********" />
+          </div>
         </div>
-    </div>
+      
+        <button class="button is-primary">Sign in</button>
+      </form>
 </body>
 </html>
