@@ -8,27 +8,68 @@
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
 >
     <link rel="stylesheet" href="../estilos/login.css">
-    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/all.css" rel="stylesheet" />
+    <title>Document</title> 
 </head>
 <body>
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <p>Elemento 1</p>
-      </div>
-      <div class="column is-four-fifths has-text-centered ">
-        <div id="imagen_login">
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered is-vcentered">
+          <!-- Bloque de imagen con título superpuesto -->
+          <div class="column is-6-tablet is-5-desktop is-4-widescreen image-container">
+            <div class="is-flex is-flex-direction-column is-align-items-center is-justify-content-space-between" style="height: 100%">
+              <h1 class="title has-text-centered has-text-white">Escuela Brujería</h1>
+              <button class="button is-primary is-medium is-rounded">Registrarse</button>
+            </div>
+          </div>
+          
+          <!-- Bloque de login -->
+          <div class="column is-6-tablet is-5-desktop is-4-widescreen">
+            <form action="" class="box is-shadowless">
+              <h1 class="title">Please sign in</h1>
+              <div class="card">
+                <div class="card-content">
+                  <div class="field">
+                    <label for="" class="label">Email</label>
+                    <div class="control has-icons-left">
+                      <input type="email" placeholder="e.g. bobsmith@gmail.com" class="input" required>
+                      <span class="icon is-small is-left">
+                        <i class="fa fa-envelope"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="" class="label">Password</label>
+                    <div class="control has-icons-left">
+                      <input type="password" placeholder="*******" class="input" required>
+                      <span class="icon is-small is-left">
+                        <i class="fa fa-lock"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="" class="checkbox">
+                      <input type="checkbox">
+                     Remember me
+                    </label>
+                  </div>
 
+                  <div class="field buttons">
+                    <button class="button is-fullwidth is-success">
+                      <span class="icon"><i class="gg-log-in"></i></span><span>Login</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <div id="login">
-          <div></div>
-        </div>
-      </div>
-      <div class="column">
-        <p>Elemento 3</p>
       </div>
     </div>
-  </div>
-  
+  </section>
 </body>
 </html>

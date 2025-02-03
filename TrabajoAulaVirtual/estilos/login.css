@@ -1,13 +1,51 @@
 html, body {
     height: 100%;
     margin: 0;
-  }
-  .login-container {
+}
+
+.hero-body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-  }
-  .login-box {
-    height: 75%;
-  }
+    padding: 3rem 1.5rem;
+}
+
+.image-container {
+    position: relative;
+    min-height: 400px;
+    height: 100%;
+    background-image: url('../images/logo2');
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+}
+
+.image-container .title {
+    position: relative;
+    color:#eabe6c;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5rem;
+    z-index: 1;
+}
+
+.image-container button {
+    position: relative;
+    z-index: 2;
+}
+
+/* Add overlay to make title more readable */
+.image-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    border-radius: 6px;
+}
