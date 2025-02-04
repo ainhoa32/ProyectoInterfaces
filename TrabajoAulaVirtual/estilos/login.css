@@ -1,6 +1,8 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: Cinzel ,Satisfy, sans-serif;
+      
 }
 
 .hero-body {
@@ -13,21 +15,29 @@ html, body {
     position: relative;
     min-height: 400px;
     height: 100%;
-    background-image: url('../images/logo2');
+    background-image: url('../images/logo3.png');
     background-size: cover;
     background-position: center;
     border-radius: 6px;
     display: flex;
     align-items: flex-end;
 }
+.image-container.imagen-fondo{
+    background-image: url('../images/fondo_login.jpeg');
+    background-size: cover;
+    background-position: center;
+}
 .image-container .title {
     position: relative;
-    color:#eabe6c;
+    color:#6c5ac7;
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 0.5rem;
     z-index: 1;
+}
+.image-container .title.nombre-aula{
+    color: #EABE6C;
 }
 .image-container button {
     position: relative;
@@ -37,6 +47,7 @@ html, body {
     color: #000;
     background-color: #eabe6c;
     border-color: #eabe6c;
+    font-family: Cinzel;
 }
 .label-user{
     color: #6c5ac7;
@@ -46,12 +57,10 @@ html, body {
     color: #6c5ac7;
     opacity: 0.7;
 }
-.titulo-login{
-    color: #6c5ac7;
-}
 .boton-acceso{
     color: #fff;
     background-color: #6c5ac7;
+    font-family: Cinzel;
 }
 .label-recuerdame{
     color: #6c5ac7;
@@ -72,14 +81,15 @@ html, body {
 }
 
 .input {
-    background-color: #FBF5E5; /* Color de fondo igual al contenedor */
-    border: none; /* Eliminar bordes */
-    border-bottom: 2px solid #6c5ac7; /* Línea debajo */
-    box-shadow: none; /* Eliminar sombras */
-    border-radius: 0; /* Eliminar bordes redondeados */
+    background-color: #FBF5E5;
+    border: none;
+    border-bottom: 2px solid #6c5ac7;
+    box-shadow: none; 
+    border-radius: 0;
+    color: #6c5ac7;
 }
 
 .input:focus {
-    border-bottom-color: #6c5ac7; /* Color de la línea al enfocar */
-    box-shadow: none; /* Eliminar sombras al enfocar */
+    border-bottom-color: #6c5ac7;
+    box-shadow: none;
 }
