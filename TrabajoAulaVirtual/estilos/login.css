@@ -15,7 +15,7 @@ html, body {
     position: relative;
     min-height: 400px;
     height: 100%;
-    background-image: url('../images/logo3.png');
+    background-image: url('../images/logo4.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 6px;
@@ -23,7 +23,7 @@ html, body {
     align-items: flex-end;
 }
 .image-container.imagen-fondo{
-    background-image: url('../images/fondo_login.jpeg');
+    background-image: url('../images/fondo_bueno.gif');
     background-size: cover;
     background-position: center;
 }
