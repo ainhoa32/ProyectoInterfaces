@@ -7,7 +7,6 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1.5rem;
 }
 
 .image-container {
@@ -20,9 +19,7 @@ html, body {
     border-radius: 6px;
     display: flex;
     align-items: flex-end;
-    padding: 2rem;
 }
-
 .image-container .title {
     position: relative;
     color:#eabe6c;
@@ -32,20 +29,57 @@ html, body {
     margin-bottom: 0.5rem;
     z-index: 1;
 }
-
 .image-container button {
     position: relative;
     z-index: 2;
 }
+.boton-registro {
+    color: #000;
+    background-color: #eabe6c;
+    border-color: #eabe6c;
+}
+.label-user{
+    color: #6c5ac7;
+    opacity: 0.7;
+}
+.label-pass{
+    color: #6c5ac7;
+    opacity: 0.7;
+}
+.titulo-login{
+    color: #6c5ac7;
+}
+.boton-acceso{
+    color: #fff;
+    background-color: #6c5ac7;
+}
+.label-recuerdame{
+    color: #6c5ac7;
+    opacity: 0.7;
+}
+.caja-login{
+    background-color: #FBF5E5;
+}
+.caja-login-grande{
+    background-color: #EABE6C;
+}
+.caja-login {
+    background-color: #FBF5E5;
+}
 
-/* Add overlay to make title more readable */
-.image-container::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
-    border-radius: 6px;
+.caja-login-grande {
+    background-color: #EABE6C;
+}
+
+.input {
+    background-color: #FBF5E5; /* Color de fondo igual al contenedor */
+    border: none; /* Eliminar bordes */
+    border-bottom: 2px solid #6c5ac7; /* Línea debajo */
+    box-shadow: none; /* Eliminar sombras */
+    border-radius: 0; /* Eliminar bordes redondeados */
+}
+
+.input:focus {
+    border-bottom-color: #6c5ac7; /* Color de la línea al enfocar */
+    box-shadow: none; /* Eliminar sombras al enfocar */
 }

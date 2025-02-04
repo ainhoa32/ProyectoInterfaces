@@ -7,34 +7,31 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
 >
-    <link rel="stylesheet" href="../estilos/login.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/all.css" rel="stylesheet" />
-    <title>Document</title> 
+    <link rel="stylesheet" href="../estilos/login.css">
+    <title>Inicio de sesión</title>
 </head>
 <body>
   <section class="hero is-fullheight">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered is-vcentered">
-          <!-- Bloque de imagen con título superpuesto -->
-          <div class="column is-6-tablet is-5-desktop is-4-widescreen image-container">
-            <div class="is-flex is-flex-direction-column is-align-items-center is-justify-content-space-between" style="height: 100%">
-              <h1 class="title has-text-centered has-text-white">Escuela Brujería</h1>
-              <button class="button is-primary is-medium is-rounded">Registrarse</button>
-            </div>
+          <div class="column is-6-tablet is-5-desktop is-4-widescreen image-container is-flex-direction-column is-align-items-center is-justify-content-space-between">
+              <h1 class="title has-text-centered">Escuela Brujería</h1>
+              <button class="button is-medium is-rounded boton-registro">Registrarse</button>
           </div>
           
           <!-- Bloque de login -->
           <div class="column is-6-tablet is-5-desktop is-4-widescreen">
-            <form action="" class="box is-shadowless">
-              <h1 class="title">Please sign in</h1>
-              <div class="card">
+            <form action="" class="box is-shadowless caja-login-grande">
+              <h1 class="title has-text-centered titulo-login">Identifícate</h1>
+              <div class="card caja-login">
                 <div class="card-content">
                   <div class="field">
-                    <label for="" class="label">Email</label>
+                    <label for="" class="label label-user">Usuario</label>
                     <div class="control has-icons-left">
                       <input type="email" placeholder="e.g. bobsmith@gmail.com" class="input" required>
                       <span class="icon is-small is-left">
@@ -43,7 +40,7 @@
                     </div>
                   </div>
                   <div class="field">
-                    <label for="" class="label">Password</label>
+                    <label for="" class="label label-pass">Contraseña</label>
                     <div class="control has-icons-left">
                       <input type="password" placeholder="*******" class="input" required>
                       <span class="icon is-small is-left">
@@ -52,15 +49,15 @@
                     </div>
                   </div>
                   <div class="field">
-                    <label for="" class="checkbox">
+                    <label for="" class="checkbox label-recuerdame">
                       <input type="checkbox">
-                     Remember me
+                     Recuérdame
                     </label>
                   </div>
 
-                  <div class="field buttons">
-                    <button class="button is-fullwidth is-success">
-                      <span class="icon"><i class="gg-log-in"></i></span><span>Login</span>
+                  <div class="field has-text-centered">
+                    <button class="button is-medium is-rounded is-centered boton-acceso">
+                      Acceder
                     </button>
                   </div>
                 </div>
