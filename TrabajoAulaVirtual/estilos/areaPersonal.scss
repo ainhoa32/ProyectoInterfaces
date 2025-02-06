@@ -5,14 +5,46 @@ $imagenes: (
     "../images/cartas.jpg"
 );
 
-#titulo{
-    
+.navbar{
+    background-color: #E5D9F2;
+    box-shadow: 0px 1px 10px black;
 }
 
-#contendorCardsAsignaturas {
+.navbar-menu{
+    background-color: #E5D9F2;
+}
+
+a:hover{
+    background-color: #5E1675;
+    color: white;
+}
+
+.buttons a{
+    background-color: #EABE6C;
+}
+
+body{
+    background-color: #E5D9F2;
+}
+
+#contenedorDescripcion,  #contendorCardsAsignaturas,  #contenedorTareas{
     text-align: center;
     padding: 20px;
     margin: 30px;
+    background-color: #F5EFFF;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+#contenedorTareas{
+    text-align: left;
+}
+
+hr{
+    background-color: black;
+}
+
+#contendorCardsAsignaturas {
 
     .column {
         display: grid;
@@ -22,8 +54,9 @@ $imagenes: (
     }
 
     .card {
-        background: white;
+        background: #FADFA1;
         border-radius: 10px;
+        border: black solid 1px;
         overflow: hidden;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         text-align: center;
@@ -39,9 +72,14 @@ $imagenes: (
     }
 }
 
-// Genera los estilos dinámicamente para cada imagen
 @for $i from 1 through length($imagenes) {
     #imagenAsignatura#{$i} {
         background-image: url(nth($imagenes, $i));
     }
+}
+
+.tarea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

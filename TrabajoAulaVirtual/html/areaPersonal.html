@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="../estilos/areaPersonal.css">
     <title>Mis Asignaturas</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+
+        });
+
+    </script>
 </head>
 
 <body>
@@ -46,7 +71,10 @@
         </div>
     </nav>
 
-        
+    <div id="contenedorDescripcion">
+        Hola
+    </div>
+
     <div id="contendorCardsAsignaturas" class="columns is-multiline is-centered">
         <div class="column is-one-quarter">
             <div class="card">
@@ -72,6 +100,19 @@
                 <div class="content">Magia y rituales</div>
             </div>
         </div>
+    </div>
+
+    <div id="contenedorTareas">
+        <h3>Tareas por entregar</h3>
+        <hr>
+        <div class="tarea">
+            <div><b>Trabajo del análisis de cartas de Tarot: </b> Introducción a la adivinación</div> <div class="fechas">01/02/2024  00:00 </div>
+        </div>
+        <hr>
+        <div class="tarea">
+            <div><b>Historia de la brujería Edad Media:</b> Historia de la brujería</div> <div class="fechas">01/02/2024  00:00 </div>
+        </div>
+        <hr>
     </div>
 
 </body>
