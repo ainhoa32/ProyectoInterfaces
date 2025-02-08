@@ -1,0 +1,17 @@
+.navbar {
+  background-color: #E5D9F2;
+  box-shadow: 0px 1px 10px black;
+}
+
+.navbar-menu {
+  background-color: #E5D9F2;
+}
+
+a:hover {
+  background-color: #5E1675;
+  color: white;
+}
+
+.buttons a {
+  background-color: #EABE6C;
+}/*# sourceMappingURL=menu.css.map */

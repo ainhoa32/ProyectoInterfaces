@@ -1,0 +1,21 @@
+footer{
+    background-color: #E5D9F2;
+    box-shadow: 0px 1px 10px black;
+    h3{
+        padding: 30px 0px 0px 30px;
+    }
+}
+
+#contenedorFooter{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    div{
+        margin: 10px;
+    }
+}
+
+#icon1{
+    background-image: url("../images/twitterIcon.png");
+}
