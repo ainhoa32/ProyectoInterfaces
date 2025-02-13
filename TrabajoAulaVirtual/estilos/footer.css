@@ -1,9 +1,17 @@
 footer {
-  background-color: #E5D9F2;
   box-shadow: 0px 1px 10px black;
 }
-footer h3 {
+footer h2 {
   padding: 30px 0px 0px 30px;
+}
+
+.listaAsignaturaFooter {
+  background-color: #8174A0;
+  color: #f7d89d;
+}
+
+.areaPersonalFooter {
+  background-color: #E5D9F2;
 }
 
 #contenedorFooter {

@@ -1,10 +1,17 @@
 .navbar {
-  background-color: #E5D9F2;
   box-shadow: 0px 1px 10px black;
 }
 
-.navbar-menu {
+.areaPersonalNav {
   background-color: #E5D9F2;
+  color: #f7d89d;
+  font-weight: bold;
+}
+
+.listaAsignaturaNav {
+  background-color: #8174A0;
+  color: #f7d89d;
+  font-weight: bold;
 }
 
 a:hover {
