@@ -9,6 +9,60 @@
     <link rel="stylesheet" href="../estilos/footer.css">
 
     <title>Mis Asignaturas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        #contenedorCuerpoAsignatura {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .contenedorAsignatura {
+            background: white;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .titulo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .flecha {
+            transition: transform 0.3s ease;
+        }
+
+        .contenido {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .contenido img {
+            width: 100%;
+            max-height: 200px;
+            border-radius: 5px;
+        }
+
+        /* Cuando se expande */
+        .activo .contenido {
+            display: block;
+        }
+
+        .activo .flecha {
+            transform: rotate(180deg);
+        }
+    </style>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -74,8 +128,45 @@
     </nav>
 
     <div id="contenedorCuerpoAsignatura">
-        
+        <div class="contenedorAsignatura" onclick="toggleDesplegable(this)">
+            <div class="titulo">
+                <h2>Introducción a la adivinación</h2>
+                <span class="flecha">⬇️</span>
+            </div>
+            <div class="contenido">
+                <p>Texto sobre la asignatura de adivinación.</p>
+                <img src="https://via.placeholder.com/300x200" alt="Imagen adivinación">
+            </div>
+        </div>
+    
+        <div class="contenedorAsignatura" onclick="toggleDesplegable(this)">
+            <div class="titulo">
+                <h2>Espiritismo</h2>
+                <span class="flecha">⬇️</span>
+            </div>
+            <div class="contenido">
+                <p>Texto sobre la asignatura de espiritismo.</p>
+                <img src="https://via.placeholder.com/300x200" alt="Imagen espiritismo">
+            </div>
+        </div>
+    
+        <div class="contenedorAsignatura" onclick="toggleDesplegable(this)">
+            <div class="titulo">
+                <h2>Historia de la brujería</h2>
+                <span class="flecha">⬇️</span>
+            </div>
+            <div class="contenido">
+                <p>Texto sobre la historia de la brujería.</p>
+                <img src="https://via.placeholder.com/300x200" alt="Imagen brujería">
+            </div>
+        </div>
     </div>
+    
+    <script>
+        function toggleDesplegable(elemento) {
+            elemento.classList.toggle("activo");
+        }
+    </script>
 
     <footer>
         <h3><b>Escuela paquito</b></h3>
