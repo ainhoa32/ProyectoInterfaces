@@ -1,28 +1,29 @@
 $imagenes: (
     "../images/cartas.jpg",
     "../images/espiritismo.jpg",
-    "../images/cartas.jpg",
-    "../images/cartas.jpg"
-);
+    "../images/brujas.jpg",
+    "../images/brujas.jpg");
 
-body{
+body {
     background-color: #E5D9F2;
 }
 
-#contenedorDescripcion,  #contendorCardsAsignaturas,  #contenedorTareas{
+#contenedorDescripcion,
+#contendorCardsAsignaturas,
+#contenedorTareas {
     text-align: center;
     padding: 20px;
     margin: 30px;
     background-color: #F5EFFF;
-    border: black solid 1px;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
-#contenedorTareas{
+#contenedorTareas {
     text-align: left;
 }
 
-hr{
+hr {
     background-color: black;
 }
 
@@ -30,20 +31,19 @@ hr{
 
     .column {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 20px;
-        justify-content: center;
     }
 
     .card {
         background: #FADFA1;
         border-radius: 10px;
-        border: black solid 1px;
+        border: 1px solid black;
         overflow: hidden;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         text-align: center;
         padding: 10px;
     }
+    
 
     .imagen-asignatura {
         width: 100%;
@@ -52,16 +52,38 @@ hr{
         background-size: cover;
         background-position: center;
     }
-}
 
-@for $i from 1 through length($imagenes) {
-    #imagenAsignatura#{$i} {
-        background-image: url(nth($imagenes, $i));
+    @for $i from 1 through length($imagenes) {
+        #imagenAsignatura#{$i} {
+            background-image: url(nth($imagenes, $i));
+        }
     }
 }
 
-.tarea{
+.tarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    .fechas{
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #contendorCardsAsignaturas {
+        justify-content: center; // Centra las tarjetas horizontalmente
+        gap: 20px;
+    }
+
+    #contendorCardsAsignaturas .column {
+        display: flex;
+        justify-content: center;
+        width: 100%; // Asegura que la columna ocupe el ancho completo
+    }
+
+    #contendorCardsAsignaturas .card {
+        max-width: 230px;
+        width: 100%;
+    }
 }
