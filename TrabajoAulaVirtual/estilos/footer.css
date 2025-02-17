@@ -24,6 +24,10 @@ footer h2 {
   margin: 10px;
 }
 
+/* Iconos */
 #icon1 {
   background-image: url("../images/twitterIcon.png");
+  width: 32px;
+  height: 32px;
+  background-size: cover;
 }/*# sourceMappingURL=footer.css.map */

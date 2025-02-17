@@ -13,29 +13,22 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
 
-            // Get all "navbar-burger" elements
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-            // Add a click event on each of them
             $navbarBurgers.forEach(el => {
                 el.addEventListener('click', () => {
-
-                    // Get the target from the "data-target" attribute
                     const target = el.dataset.target;
                     const $target = document.getElementById(target);
-
-                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
                     el.classList.toggle('is-active');
                     $target.classList.toggle('is-active');
-
                 });
             });
-
         });
 
         function toggleDesplegable(elemento) {
-            elemento.classList.toggle("activo");
+            elemento.classList.toggle("is-active");
+            const contenido = elemento.querySelector('.contenido');
+            contenido.classList.toggle("is-hidden");
         }
     </script>
 </head>
@@ -77,61 +70,75 @@
         </div>
     </nav>
 
-    <div id="contenedorCuerpoAsignatura">
-        <div class="contenedorAsignatura" onclick="toggleDesplegable(this)">
-            <div class="titulo">
-                <h2>Introducción a la adivinación</h2>
-                <div class="flecha"><img class="icon" src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
+    <div id="contenedorCuerpoAsignatura" class="section">
+        <div class="box is-clickable contenedor" onclick="toggleDesplegable(this)">
+            <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
+                <div><h2 class="title is-4">Introducción a la adivinación</h2></div>
+                <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
             </div>
-            <div class="contenido">
-                <p>Descubre los misterios del futuro y las energías que guían el destino. En esta asignatura, los
-                    estudiantes aprenderán las bases de la adivinación a través de diferentes métodos como la lectura de
-                    cartas, la interpretación de sueños y el uso del péndulo. Una puerta abierta a la intuición y al
-                    arte de la profecía.</p>
-                <img src="../images/adivinacion.jpg" alt="Imagen adivinación">
+            <div class="contenido is-hidden">
+                <div class="contenidoAsignatura">
+                    <p>Descubre los misterios del futuro y las energías que guían el destino. En esta asignatura, los
+                        estudiantes aprenderán las bases de la adivinación a través de diferentes métodos como la
+                        lectura de
+                        cartas, la interpretación de sueños y el uso del péndulo. Una puerta abierta a la intuición y al
+                        arte de la profecía.</p>
+                    <img src="../images/adivinacion.jpg" alt="Imagen adivinación">
+
+                </div>
+
             </div>
         </div>
 
-        <div class="contenedorAsignatura" onclick="toggleDesplegable(this)">
-            <div class="titulo">
-                <h2>Tema 1: Lectura del Tarot</h2>
-                <div class="flecha"><img class="icon" src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
+        <div class="box is-clickable" onclick="toggleDesplegable(this)">
+            <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
+                <div><h2 class="title is-4">Tema 1: Lectura del Tarot</h2></div>
+                <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
             </div>
-            <div class="contenido">
-                <p>Aprenderás sobre los Arcanos Mayores y Menores, el significado de cada carta y cómo realizar lecturas básicas para interpretar el destino.</p>
-                <img src="../images/espiritismo2.jpg" alt="Imagen espiritismo">
-            </div>
-        </div>
-
-        <div class="contenedorAsignatura" onclick="toggleDesplegable(this)">
-            <div class="titulo">
-                <h2>Tema 2: Quiromancia</h2>
-                <div class="flecha"><img class="icon" src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
-            </div>
-            <div class="contenido">
-                <p>Exploraremos el arte de leer las líneas de la mano, comprendiendo su relación con la personalidad y el futuro de cada individuo.</p>
-                <img src="../images/espiritismo2.jpg" alt="Imagen espiritismo">
-            </div>
-        </div>
-
-        <div class="contenedorAsignatura" onclick="toggleDesplegable(this)">
-            <div class="titulo">
-                <h2>Tema 3: Astrología y Horóscopos</h2>
-                <div class="flecha">
-                    <div>
-                        <img class="icon" src="../images/angulo-hacia-abajo.png" alt="flecha">
-                    </div>
+            <div class="contenido is-hidden">
+                <div class="contenidoAsignatura">
+                    <p>Aprenderás sobre los Arcanos Mayores y Menores, el significado de cada carta y cómo realizar
+                        lecturas
+                        básicas para interpretar el destino.</p>
+                    <img src="../images/tarot1.jpg" alt="Imagen espiritismo">
                 </div>
             </div>
-            <div class="contenido">
-                <p>Descubre cómo la posición de los astros influye en la vida y el destino de las personas, y cómo interpretar cartas astrales.</p>
-                <img src="../images/brujas.jpg" loading="lazy" alt="Imagen brujería">
+        </div>
+
+        <div class="box is-clickable" onclick="toggleDesplegable(this)">
+            <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
+                <div><h2 class="title is-4">Tema 2: Quiromancia</h2></div>
+                <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
+            </div>
+            <div class="contenido is-hidden">
+                <div class="contenidoAsignatura">
+                    <p>Exploraremos el arte de leer las líneas de la mano, comprendiendo su relación con la personalidad
+                        y
+                        el futuro de cada individuo.</p>
+                    <img src="../images/quiromancia.jpg" alt="Imagen espiritismo">
+                </div>
+            </div>
+        </div>
+
+        <div class="box is-clickable" onclick="toggleDesplegable(this)">
+            <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
+                <div><h2 class="title is-4">Tema 3: Astrología y Horóscopos</h2></div>
+                <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
+            </div>
+            <div class="contenido is-hidden">
+                <div class="contenidoAsignatura">
+                    <p>Descubre cómo la posición de los astros influye en la vida y el destino de las personas, y cómo
+                        interpretar cartas astrales.</p>
+                    <img src="../images/astrologia2.jpg" alt="Imagen espiritismo">
+
+                </div>
             </div>
         </div>
     </div>
 
+
     <footer class="listaAsignaturaFooter">
-        <h2><b>Escuela paquito</b></h2>
+        <h3><b>Escuela paquito</b></h3>
         <div id="contenedorFooter">
             <div>Si te animas a venir a las clases presenciales:
                 <br>
@@ -139,15 +146,20 @@
             </div>
             <div>
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.695632133835!2d-3.6539199!3d40.4192794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f599699f1ab%3A0x83554f35d5502a11!2sIES%20Francisco%20de%20Goya!5e0!3m2!1ses!2ses!4v1707900000000"
-                frameborder="0">
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.695632133835!2d-3.6539199!3d40.4192794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f599699f1ab%3A0x83554f35d5502a11!2sIES%20Francisco%20de%20Goya!5e0!3m2!1ses!2ses!4v1707900000000"
+                    frameborder="0">
                 </iframe>
             </div>
-            <div>
+            <div class="contactos">
                 Encuentranos en:
+                <div id="icon1">
+                </div>
+                <div id="icon1">
+                </div>
+                <div id="icon1">
+                </div>
             </div>
-            <div id="icon1">
-            </div>
+
         </div>
     </footer>
 

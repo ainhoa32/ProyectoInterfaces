@@ -8,12 +8,12 @@ footer{
 }
 
 .listaAsignaturaFooter{
-    background-color: map-get($colores, gris-1);
+    background-color: #8174A0;
     color: #f7d89d;
 }
   
 .areaPersonalFooter{
-    background-color: map-get($colores, lila-1);
+    background-color: #E5D9F2;
 }
 
 #contenedorFooter{
@@ -26,6 +26,10 @@ footer{
     }
 }
 
-#icon1{
+/* Iconos */
+#icon1 {
     background-image: url("../images/twitterIcon.png");
+    width: 32px;
+    height: 32px;
+    background-size: cover;
 }
