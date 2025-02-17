@@ -1,5 +1,7 @@
+@import "general.scss";
+
 body {
-    background-color: #8174A0;
+    background-color: map-get($colores, gris-1);
 }
 
 #contenedorCuerpoAsignatura {
@@ -10,7 +12,7 @@ body {
 }
 
 .contenedorAsignatura {
-    background: #FADFA1;
+    background: map-get($colores, amarillo-2);
     border: 2px solid #333;
     border-radius: 10px;
     padding: 20px;

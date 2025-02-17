@@ -1,11 +1,14 @@
+@import "general.scss";
+
 $imagenes: (
     "../images/cartas.jpg",
     "../images/espiritismo.jpg",
     "../images/brujas.jpg",
-    "../images/brujas.jpg");
+    "../images/brujas.jpg"
+);
 
 body {
-    background-color: #E5D9F2;
+    background-color: map-get($colores, lila-1);
 }
 
 #contenedorDescripcion,
@@ -14,7 +17,7 @@ body {
     text-align: center;
     padding: 20px;
     margin: 30px;
-    background-color: #F5EFFF;
+    background-color: map-get($colores, lila-2);
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -28,14 +31,13 @@ hr {
 }
 
 #contendorCardsAsignaturas {
-
     .column {
         display: grid;
         gap: 20px;
     }
 
     .card {
-        background: #FADFA1;
+        background: map-get($colores, amarillo-2);
         border-radius: 10px;
         border: 1px solid black;
         overflow: hidden;
@@ -43,7 +45,6 @@ hr {
         text-align: center;
         padding: 10px;
     }
-    
 
     .imagen-asignatura {
         width: 100%;
@@ -65,21 +66,21 @@ hr {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .fechas{
+    .fechas {
         margin-right: 15px;
     }
 }
 
 @media only screen and (max-width: 770px) {
     #contendorCardsAsignaturas {
-        justify-content: center; // Centra las tarjetas horizontalmente
+        justify-content: center;
         gap: 20px;
     }
 
     #contendorCardsAsignaturas .column {
         display: flex;
         justify-content: center;
-        width: 100%; // Asegura que la columna ocupe el ancho completo
+        width: 100%;
     }
 
     #contendorCardsAsignaturas .card {
