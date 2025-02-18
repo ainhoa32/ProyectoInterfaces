@@ -1,6 +1,6 @@
 @import "general.scss"; /* Mantén esto si tienes variables o configuraciones globales */
 
-/* Color de fondo del cuerpo */
+
 body {
     background-color: map-get($colores, gris-1);
 }
