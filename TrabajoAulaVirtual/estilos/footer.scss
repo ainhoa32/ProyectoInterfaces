@@ -1,8 +1,19 @@
 @import "general.scss";
 
+$imagenes: (
+    "../images/twitterIcon.png",
+    "../images/instagramIcon.png",
+    "../images/facebookIcon.png",
+    "../images/linkedinIcon.svg.png"
+);
+
+
 footer{
     box-shadow: 0px 1px 10px black;
     h2{
+        padding: 30px 0px 0px 30px;
+    }
+    h3{
         padding: 30px 0px 0px 30px;
     }
 }
@@ -20,16 +31,32 @@ footer{
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    div{
-        margin: 10px;
+    
+    #ubicacion, #contactos, .icons{
+        margin: 20px;
+        iframe{
+            margin: 10px;
+        }
     }
 }
 
-/* Iconos */
-#icon1 {
-    background-image: url("../images/twitterIcon.png");
+@media only screen and (max-width: 770px) {
+    #logos {
+        display: flex;
+    }
+}
+
+.icons {
     width: 32px;
     height: 32px;
     background-size: cover;
 }
+
+
+
+@for $i from 1 through length($imagenes) {
+    .icon#{$i} {
+        background-image: url(nth($imagenes, $i));
+    }
+}
+

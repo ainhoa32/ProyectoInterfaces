@@ -4,6 +4,9 @@ footer {
 footer h2 {
   padding: 30px 0px 0px 30px;
 }
+footer h3 {
+  padding: 30px 0px 0px 30px;
+}
 
 .listaAsignaturaFooter {
   background-color: #8174A0;
@@ -18,16 +21,37 @@ footer h2 {
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
-#contenedorFooter div {
+#contenedorFooter #ubicacion, #contenedorFooter #contactos, #contenedorFooter .icons {
+  margin: 20px;
+}
+#contenedorFooter #ubicacion iframe, #contenedorFooter #contactos iframe, #contenedorFooter .icons iframe {
   margin: 10px;
 }
 
-/* Iconos */
-#icon1 {
-  background-image: url("../images/twitterIcon.png");
+@media only screen and (max-width: 770px) {
+  #logos {
+    display: flex;
+  }
+}
+.icons {
   width: 32px;
   height: 32px;
   background-size: cover;
+}
+
+.icon1 {
+  background-image: url("../images/twitterIcon.png");
+}
+
+.icon2 {
+  background-image: url("../images/instagramIcon.png");
+}
+
+.icon3 {
+  background-image: url("../images/facebookIcon.png");
+}
+
+.icon4 {
+  background-image: url("../images/linkedinIcon.svg.png");
 }/*# sourceMappingURL=footer.css.map */
