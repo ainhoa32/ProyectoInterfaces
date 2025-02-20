@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espiritismo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../estilos/asignaturaConcreta.css">
+    <link rel="stylesheet" href="../estilos/menu.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
+
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        });
+
+        function toggleDesplegable(elemento) {
+            elemento.classList.toggle("is-active");
+            const contenido = elemento.querySelector('.contenido');
+            contenido.classList.toggle("is-hidden");
+        }
+    </script>
+    
+</head>
+<body>
+    <nav class="navbar listaAsignaturaNav" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="areaPersonal.html"><h1>Mi Escuela</h1></a>
+            <a role="button" class="navbar-burger" data-target="navbarBasicExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">Inicio</a>
+                <a class="navbar-item">Área personal</a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">Mis asignaturas</a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">Introducción a la adivinación</a>
+                        <a class="navbar-item">Espiritismo 1</a>
+                        <a class="navbar-item">Historia de la brujería</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary"><strong>Ver mi perfil</strong></a>
+                        <a class="button is-light">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedorAsignatura">
+        <!-- Header Section with Title and Profile -->
+        <div class="curso-header">
+            <div class="curso-info">
+                <h1 class="title is-4">Escuela Paquito</h1>
+                <div class="select is-small">
+                    <select>
+                        <option>UD 1 - Espiritismo</option>
+                        <option>UD 2 - Contacto espiritual</option>
+                        <option>UD 3 - Invocaciones avanzadas</option>
+                    </select>
+                </div>
+            </div>
+            <div class="profile-container">
+                <figure class="image is-48x48">
+                    <div class="imagen-profesor"></div>
+                </figure>
+                <span class="profile-name">Aitor Menta</span>
+            </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr class="curso-divider">
+
+        <!-- Navigation Controls -->
+        <div class="curso-navigation">
+            <div class="nav-buttons">
+                <a class="nav-link prev-link">
+                    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+                    <span>Unidad anterior</span>
+                </a>
+            </div>
+            
+            <div class="nav-tabs">
+                <div class="tabs">
+                    <ul>
+                        <li class="is-active"><a>Contenido</a></li>
+                        <li><a>Calificaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="nav-buttons text-right">
+                <a class="nav-link next-link">
+                    <span>Siguiente unidad</span>
+                    <span class="icon"><i class="fas fa-chevron-right"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Content Boxes -->
+        <div class="curso-content">
+            <!-- Box 1 -->
+            <div class="content-box" onclick="toggleDesplegable(this)">
+                <div class="box-header">
+                    <div class="box-icon">
+                        <span class="icon"><i class="fas fa-pen"></i></span>
+                    </div>
+                    <div class="box-title">Invocación de espíritus menores</div>
+                </div>
+                <div class="contenido is-hidden">
+                    <div class="box-content">
+                        <p>Contenido sobre invocación de espíritus menores...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 2 - Highlighted in yellow -->
+            <div class="content-box is-highlighted" onclick="toggleDesplegable(this)">
+                <div class="box-header">
+                    <div class="box-icon">
+                        <span class="icon"><i class="fas fa-book-open"></i></span>
+                    </div>
+                    <div class="box-title">Que tipos de espíritus existen y como reconocerlos</div>
+                </div>
+                <div class="contenido is-hidden">
+                    <div class="box-content">
+                        <p>Información sobre los diferentes tipos de espíritus...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="content-box" onclick="toggleDesplegable(this)">
+                <div class="box-header">
+                    <div class="box-icon">
+                        <span class="icon"><i class="fas fa-search"></i></span>
+                    </div>
+                    <div class="box-title">Identificación de espíritus</div>
+                </div>
+                <div class="contenido is-hidden">
+                    <div class="box-content">
+                        <p>Métodos para identificar diferentes tipos de espíritus...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 4 - With Video -->
+            <div class="content-box is-highlighted" onclick="toggleDesplegable(this)">
+                <div class="box-header">
+                    <div class="box-icon">
+                        <span class="icon"><i class="fas fa-film"></i></span>
+                    </div>
+                    <div class="box-title">La primera invocación de un Djinn</div>
+                </div>
+                <div class="contenido">
+                    <div class="box-content">
+                        <div class="video-container">
+                            <video controls>
+                                <source src="video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="listaAsignaturaFooter footer">
+        <h3><b>Escuela paquito</b></h3>
+        <div id="contenedorFooter">
+            <div id="ubicacion">
+                <div>
+                    Si te animas a venir a las clases presenciales:
+                <br>
+                C/ de Sta. Irene, 4, Cdad. Lineal, 28017 Madrid
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.695632133835!2d-3.6539199!3d40.4192794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f599699f1ab%3A0x83554f35d5502a11!2sIES%20Francisco%20de%20Goya!5e0!3m2!1ses!2ses!4v1707900000000"
+                    frameborder="0">
+                </iframe>
+            </div>
+
+            <div id="contactos">
+                Encuentranos en:
+                <div id="logos">
+                    <div class="icons icon1">
+                    </div>
+                    <div class="icons icon2">
+                    </div>
+                    <div class="icons icon3">
+                    </div>
+                    <div class="icons icon4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+</body>
+</html>

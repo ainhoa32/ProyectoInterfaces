@@ -1,0 +1,279 @@
+// Variables
+$primary-color: #8174A0;
+$secondary-color: #f7d89d;
+$highlight-color: #fffbe6;
+$border-radius: 8px;
+$spacing-unit: 1rem;
+$box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin box-style {
+  background-color: white;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin-bottom: $spacing-unit;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+// Main content styles - designed to work with existing menu/footer
+.contenedorAsignatura {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #f8f8f8;
+}
+
+// Header section
+.curso-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-unit;
+
+  .curso-info {
+    h1 {
+      margin-bottom: 0.5rem;
+      font-weight: 900;
+      color: $primary-color;
+    }
+    
+    .select select {
+      border-color: $primary-color;
+      
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 0.125em rgba(129, 116, 160, 0.25);
+      }
+    }
+  }
+
+  .profile-container {
+    @include flex-center;
+    gap: 0.5rem;
+
+    figure.image {
+        margin: 0; // Reset margin
+    }
+
+    .profile-name {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+}
+.imagen-profesor {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url(../images/aitor_menta.jpg);
+    background-size: cover;
+    background-position: center;
+}
+// Divider
+.curso-divider {
+  height: 1px;
+  background-color: $primary-color;
+  opacity: 0.5;
+  margin: 1rem 0;
+}
+
+// Navigation
+.curso-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  .nav-buttons {
+    flex: 1;
+    
+    &.text-right {
+      text-align: right;
+    }
+  }
+
+  .nav-link {
+    @include flex-center;
+    color: $primary-color;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+    
+    &:hover {
+      background-color: transparent;
+      color: darken($primary-color, 15%);
+      text-decoration: underline;
+    }
+    
+    &.next-link {
+      justify-content: flex-end;
+    }
+    
+    .icon {
+      color: $primary-color;
+    }
+  }
+
+  .nav-tabs {
+    flex: 2;
+    text-align: center;
+    
+    .tabs ul {
+      justify-content: center;
+      border-bottom: none;
+      
+      li a {
+        border-bottom-color: transparent;
+        color: #666;
+        
+        &:hover {
+          background-color: transparent;
+          color: $primary-color;
+          border-bottom-color: $primary-color;
+        }
+      }
+      
+      li.is-active a {
+        color: $primary-color;
+        border-bottom-color: $primary-color;
+        
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+// Content boxes
+.curso-content {
+  .content-box {
+    @include box-style;
+    cursor: pointer;
+    
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    &.is-active {
+      margin-bottom: 1.5rem;
+    }
+    
+    &.is-highlighted {
+      background-color: $highlight-color;
+    }
+    
+    .box-header {
+      @include flex-center;
+      padding: 1rem;
+      gap: 1rem;
+      
+      .box-icon {
+        width: 24px;
+        height: 24px;
+        @include flex-center;
+        justify-content: center;
+        
+        .icon {
+          color: $primary-color;
+        }
+      }
+      
+      .box-title {
+        font-weight: 500;
+        color: #333;
+      }
+    }
+    
+    .contenido {
+      padding: 0 1rem 1rem 1rem;
+      
+      &.is-hidden {
+        display: none;
+      }
+      
+      .box-content {
+        padding-left: 2.5rem;
+      }
+      
+      .video-container {
+        margin-top: 0.5rem;
+        width: 100%;
+        border-radius: $border-radius;
+        overflow: hidden;
+        
+        video {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+.button.is-primary {
+    background-color: #EABE6C;
+    color: #333;
+    
+    &:hover {
+      background-color: darken(#EABE6C, 10%);
+      color: #333;
+    }
+  }
+  
+  .button.is-light {
+    background-color: #f5f5f5;
+    
+    &:hover {
+      background-color: darken(#f5f5f5, 10%);
+    }
+  }
+
+// Fix hover behavior for content boxes to not interfere with existing styles
+.content-box:hover {
+  .box-header, .box-title, .box-icon, .icon {
+    background-color: transparent;
+    color: inherit;
+  }
+  
+  .box-icon .icon {
+    color: $primary-color;
+  }
+}
+
+// Responsive adjustments
+@media screen and (max-width: 768px) {
+  .curso-header {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .profile-container {
+      margin-top: 1rem;
+    }
+  }
+  
+  .curso-navigation {
+    flex-direction: column;
+    gap: 1rem;
+    
+    .nav-buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      
+      &.text-right {
+        justify-content: flex-end;
+      }
+    }
+    
+    .nav-tabs {
+      width: 100%;
+    }
+  }
+}
