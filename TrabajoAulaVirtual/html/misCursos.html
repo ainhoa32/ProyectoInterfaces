@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Cursos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="../estilos/menu.css">
+  <link rel="stylesheet" href="../estilos/footer.css">
+  <link rel="stylesheet" href="../estilos/misCursos.css">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
+
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+            });
+        });
+    });
+
+    function toggleDesplegable(elemento) {
+        elemento.classList.toggle("is-active");
+        const contenido = elemento.querySelector('.contenido');
+        contenido.classList.toggle("is-hidden");
+    }
+</script>
+</head>
+<body>
+    <nav class="navbar areaPersonalNav" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="areaPersonal.html"><h1>Mi Escuela</h1></a>
+            <a role="button" class="navbar-burger" data-target="navbarBasicExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">Inicio</a>
+                <a class="navbar-item">Área personal</a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="areaAsignatura.html">Mis Cursos</a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="asignaturaEspiritismo.html">Espiritismo</a>
+                        <a class="navbar-item" href="areaAsignatura.html">Magia Negra</a>
+                        <a class="navbar-item" href="areaAsignatura.html">Astrología</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary"><strong>Ver mi perfil</strong></a>
+                        <a class="button is-light">Salir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+  <div class="mis-cursos">
+    <div class="page-background">
+      <div class="container py-5">
+        <h1 class="title is-3 has-text-centered mb-5">Mis cursos</h1>
+        
+        <div class="card-custom is-light-purple">
+          <div class="card-content">
+            <div class="columns is-mobile is-vcentered">
+              <div class="column is-narrow">
+                <div class="course-image">
+                  <img src="../images/espiritismo3.jpeg" alt="Ouija">
+                </div>
+              </div>
+              <div class="column">
+                <p class="title is-4 mb-2">Espiritismo</p>
+                <p class="subtitle is-6 mt-1">1º Brujería</p>
+              </div>
+              <div class="column is-narrow">
+                <button class="button button-custom is-yellow">Acceder</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-custom is-yellow">
+          <div class="card-content">
+            <div class="columns is-mobile is-vcentered">
+              <div class="column is-narrow">
+                <div class="course-image">
+                  <img src="../images/magia_negra_china.jpg" alt="Magia negra china">
+                </div>
+              </div>
+              <div class="column">
+                <p class="title is-4 mb-2">Magia negra china</p>
+                <p class="subtitle is-6 mt-1">1º Brujería</p>
+              </div>
+              <div class="column is-narrow">
+                <button class="button button-custom is-light-purple">Acceder</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-custom is-light-purple">
+          <div class="card-content">
+            <div class="columns is-mobile is-vcentered">
+              <div class="column is-narrow">
+                <div class="course-image">
+                  <img src="../images/astrologia.jpg" alt="Astrología">
+                </div>
+              </div>
+              <div class="column">
+                <p class="title is-4 mb-2">Astrología</p>
+                <p class="subtitle is-6 mt-1">1º Brujería</p>
+              </div>
+              <div class="column is-narrow">
+                <button class="button button-custom is-yellow">Acceder</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <footer class="areaPersonalFooter">
+    <h3><b>Escuela paquito</b></h3>
+    <div id="contenedorFooter">
+        <div id="ubicacion">
+            <div>
+                Si te animas a venir a las clases presenciales:
+            <br>
+            C/ de Sta. Irene, 4, Cdad. Lineal, 28017 Madrid
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.695632133835!2d-3.6539199!3d40.4192794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f599699f1ab%3A0x83554f35d5502a11!2sIES%20Francisco%20de%20Goya!5e0!3m2!1ses!2ses!4v1707900000000"
+                frameborder="0">
+            </iframe>
+        </div>
+
+        <div id="contactos">
+            Encuentranos en:
+            <div id="logos">
+                <div class="icons icon1">
+                </div>
+                <div class="icons icon2">
+                </div>
+                <div class="icons icon3">
+                </div>
+                <div class="icons icon4">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
