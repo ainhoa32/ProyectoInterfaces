@@ -13,12 +13,12 @@ footer h3 {
   padding: 30px 0px 0px 30px;
 }
 
-.listaAsignaturaFooter {
+.listaAsignaturaFooter, .misCursosFooter {
   background-color: #8174A0;
   color: #FADFA1;
 }
 
-.areaPersonalFooter {
+.areaPersonalFooter, .asignaturaEspiritismoFooter {
   background-color: #E5D9F2;
 }
 

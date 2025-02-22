@@ -12,23 +12,38 @@ h1{
     font-weight: 900;
 }
 
-.areaPersonalNav{
+.areaPersonalNav, .asignaturaEspiritismoNav{
     background-color: map-get($colores, lila-1);
     font-weight: bold;
 
     .is-active{
         background-color: map-get($colores, lila-1);
     }
-    .navbar-link, .navbar-item{
+    .navbar-link, .navbar-item, .navbar-dropdown{
         background-color: map-get($colores, lila-1) !important;
+    }
+
+    .navbar-link, .navbar-item{
+        &:hover{
+            color: map-get($colores, morado-2);
+        }
+    }
+    
+    .navbar-dropdown{
+        .navbar-item{
+            &:hover{
+                background-color: map-get($colores, morado-2) !important;
+                color: cornsilk;
+            }
+        }
     }
 }
 
-.listaAsignaturaNav{
+.listaAsignaturaNav, .misCursosNav{
     background-color: map-get($colores, gris-1);
     font-weight: bold;
 
-    .navbar-link, .navbar-item{
+    .navbar-link, .navbar-item, .navbar-dropdown{
         background-color: map-get($colores, gris-1) !important;
         color: #f7d89d !important;
     }
@@ -36,16 +51,22 @@ h1{
     .navbar-burger {
         color: black;
     }
-    .is-active{
-        background-color: map-get($colores, gris-1);
+
+    .navbar-link, .navbar-item{
+        &:hover{
+            color: cornsilk !important;
+        }
+    }
+    .navbar-dropdown{
+        .navbar-item{
+            &:hover{
+                background-color: map-get($colores, morado-2) !important;
+                color: cornsilk;
+            }
+        }
     }
 }
 
-
-a:hover{
-    background-color: map-get($colores, morado-2);
-    color: white;
-}
 
 .buttons a{
     background-color: map-get($colores, amarillo-1);

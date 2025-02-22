@@ -11,35 +11,41 @@ h1 {
   font-weight: 900;
 }
 
-.areaPersonalNav {
+.areaPersonalNav, .asignaturaEspiritismoNav {
   background-color: #E5D9F2;
   font-weight: bold;
 }
-.areaPersonalNav .is-active {
+.areaPersonalNav .is-active, .asignaturaEspiritismoNav .is-active {
   background-color: #E5D9F2;
 }
-.areaPersonalNav .navbar-link, .areaPersonalNav .navbar-item {
+.areaPersonalNav .navbar-link, .areaPersonalNav .navbar-item, .areaPersonalNav .navbar-dropdown, .asignaturaEspiritismoNav .navbar-link, .asignaturaEspiritismoNav .navbar-item, .asignaturaEspiritismoNav .navbar-dropdown {
   background-color: #E5D9F2 !important;
 }
+.areaPersonalNav .navbar-link:hover, .areaPersonalNav .navbar-item:hover, .asignaturaEspiritismoNav .navbar-link:hover, .asignaturaEspiritismoNav .navbar-item:hover {
+  color: #5E1675;
+}
+.areaPersonalNav .navbar-dropdown .navbar-item:hover, .asignaturaEspiritismoNav .navbar-dropdown .navbar-item:hover {
+  background-color: #5E1675 !important;
+  color: cornsilk;
+}
 
-.listaAsignaturaNav {
+.listaAsignaturaNav, .misCursosNav {
   background-color: #8174A0;
   font-weight: bold;
 }
-.listaAsignaturaNav .navbar-link, .listaAsignaturaNav .navbar-item {
+.listaAsignaturaNav .navbar-link, .listaAsignaturaNav .navbar-item, .listaAsignaturaNav .navbar-dropdown, .misCursosNav .navbar-link, .misCursosNav .navbar-item, .misCursosNav .navbar-dropdown {
   background-color: #8174A0 !important;
   color: #f7d89d !important;
 }
-.listaAsignaturaNav .navbar-burger {
+.listaAsignaturaNav .navbar-burger, .misCursosNav .navbar-burger {
   color: black;
 }
-.listaAsignaturaNav .is-active {
-  background-color: #8174A0;
+.listaAsignaturaNav .navbar-link:hover, .listaAsignaturaNav .navbar-item:hover, .misCursosNav .navbar-link:hover, .misCursosNav .navbar-item:hover {
+  color: cornsilk !important;
 }
-
-a:hover {
-  background-color: #5E1675;
-  color: white;
+.listaAsignaturaNav .navbar-dropdown .navbar-item:hover, .misCursosNav .navbar-dropdown .navbar-item:hover {
+  background-color: #5E1675 !important;
+  color: cornsilk;
 }
 
 .buttons a {
