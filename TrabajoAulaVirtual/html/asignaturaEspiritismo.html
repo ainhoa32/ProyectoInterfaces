@@ -21,6 +21,14 @@
                     $target.classList.toggle('is-active');
                 });
             });
+
+            const profesorAudio = document.getElementById('profesorAudio');
+            const imagenProfesor = document.getElementById('imagenProfesor');
+
+            imagenProfesor.addEventListener('click', () => {
+                profesorAudio.currentTime = 0;
+                profesorAudio.play();
+            });
         });
 
         function toggleDesplegable(elemento) {
@@ -68,8 +76,12 @@
         </div>
     </nav>
 
+    <audio id="profesorAudio">
+        <source src="../media/Shadow wizard money gang (FULL FILM) (we love casting spells).mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
     <div class="contenedorAsignatura">
-        <!-- Header Section with Title and Profile -->
         <div class="curso-header">
             <div class="curso-info">
                 <h1 class="title is-4">Escuela Paquito</h1>
@@ -83,16 +95,14 @@
             </div>
             <div class="profile-container">
                 <figure class="image is-48x48">
-                    <div class="imagen-profesor"></div>
+                    <div id="imagenProfesor" class="imagen-profesor" style="cursor: pointer;"></div>
                 </figure>
                 <span class="profile-name">Aitor Menta</span>
             </div>
         </div>
 
-        <!-- Divider Line -->
         <hr class="curso-divider">
 
-        <!-- Navigation Controls -->
         <div class="curso-navigation">
             <div class="nav-buttons">
                 <a class="nav-link prev-link">
@@ -118,9 +128,8 @@
             </div>
         </div>
 
-        <!-- Content Boxes -->
         <div class="curso-content">
-            <!-- Box 1 -->
+            <!-- Caja 1 -->
             <div class="content-box" onclick="toggleDesplegable(this)">
                 <div class="box-header">
                     <div class="box-icon">
@@ -135,7 +144,7 @@
                 </div>
             </div>
 
-            <!-- Box 2 - Highlighted in yellow -->
+            <!-- Box 2 -->
             <div class="content-box is-highlighted" onclick="toggleDesplegable(this)">
                 <div class="box-header">
                     <div class="box-icon">
@@ -150,7 +159,7 @@
                 </div>
             </div>
 
-            <!-- Box 3 -->
+            <!-- Caja 3 -->
             <div class="content-box" onclick="toggleDesplegable(this)">
                 <div class="box-header">
                     <div class="box-icon">
@@ -165,7 +174,7 @@
                 </div>
             </div>
 
-            <!-- Box 4 - With Video -->
+            <!-- Caja 4 -->
             <div class="content-box is-highlighted" onclick="toggleDesplegable(this)">
                 <div class="box-header">
                     <div class="box-icon">
@@ -217,8 +226,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Font Awesome for icons -->
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 </body>
 </html>

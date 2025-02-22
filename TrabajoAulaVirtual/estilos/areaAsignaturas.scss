@@ -1,5 +1,8 @@
-@import "general.scss"; /* Mantén esto si tienes variables o configuraciones globales */
+@import "general.scss";
 
+*{
+    font-family: $fuente;
+}
 
 body {
     background-color: map-get($colores, gris-1);

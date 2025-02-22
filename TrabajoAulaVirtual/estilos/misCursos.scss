@@ -1,5 +1,7 @@
 @import "general.scss";
-
+*{
+  font-family: $fuente;
+}
 // Estilos personalizados que extienden Bulma
 .page-background {
   background-color: map-get($colores, gris-1);

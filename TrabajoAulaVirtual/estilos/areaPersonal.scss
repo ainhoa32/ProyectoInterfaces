@@ -1,5 +1,7 @@
 @import "general.scss";
-
+*{
+    font-family: $fuente;
+}
 $imagenes: (
     "../images/cartas.jpg",
     "../images/espiritismo.jpg",
