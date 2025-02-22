@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="../estilos/menu.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <link rel="stylesheet" href="../estilos/areaAsignaturas.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <title>Mis Asignaturas</title>
 
     <script>
@@ -46,15 +48,15 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">Inicio</a>
-                <a class="navbar-item">Área personal</a>
+                <a class="navbar-item" href="areaPersonal.html">Área personal</a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" href="areaAsignatura.html">Mis Cursos</a>
+                    <a class="navbar-link" href="misCursos.html">Mis Cursos</a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item" href="asignaturaEspiritismo.html">Espiritismo</a>
+                        <a class="navbar-item" href="areaAsignatura.html">Espiritismo</a>
                         <a class="navbar-item">Magia Negra</a>
                         <a class="navbar-item">Astrología</a>
+                        <a class="navbar-item">Adivinación</a>
                     </div>
                 </div>
             </div>
@@ -73,17 +75,15 @@
     <div id="contenedorCuerpoAsignatura" class="section">
         <div class="box is-clickable contenedor" onclick="toggleDesplegable(this)">
             <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
-                <div><h2 class="title is-4">Introducción a la adivinación</h2></div>
+                <div><h2 class="title is-4">Espiritismo</h2></div>
                 <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
             </div>
             <div class="contenido is-hidden">
                 <div class="contenidoAsignatura">
-                    <p>Descubre los misterios del futuro y las energías que guían el destino. En esta asignatura, los
-                        estudiantes aprenderán las bases de la adivinación a través de diferentes métodos como la
-                        lectura de
-                        cartas, la interpretación de sueños y el uso del péndulo. Una puerta abierta a la intuición y al
-                        arte de la profecía. </p>
-                    <img src="../images/adivinacion.jpg" alt="Imagen adivinación">
+                    <p>En esta asignatura descubriras los misterios que entraña el mundo de los espirtus, ese plano paralelo al nuestro que
+                        guarda criaturas fantasmales y paranormales, con comportamientos que no se rigen por las normas del mundo planar. Aprenderas a controlarlos, identificarlos
+                    y prevenirte de ellos </p>
+                    <img src="../images/espiritismo.jpg" alt="Imagen adivinación">
 
                 </div>
 
@@ -92,44 +92,42 @@
 
         <div class="box is-clickable" onclick="toggleDesplegable(this)">
             <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
-                <div><h2 class="title is-4">Tema 1: Lectura del Tarot</h2></div>
+                <div><h2 class="title is-4">Tema 1: Introduccion al espiritismo</h2></div>
                 <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
             </div>
             <div class="contenido is-hidden">
                 <div class="contenidoAsignatura">
-                    <p>Aprenderás sobre los Arcanos Mayores y Menores, el significado de cada carta y cómo realizar
-                        lecturas
-                        básicas para interpretar el destino. <a href="">Accede al tema</a></p>
-                    <img src="../images/tarot1.jpg" alt="Imagen espiritismo">
+                    <p>Aprenderás lo mas basico sobre los espiritus menores y como puedes manifestarlos. Solo hablaremos de los tipos mas basicos
+                        y comunes <a href="asignaturaEspiritismo.html">Accede al tema</a></p>
+                    <img src="../images/espiritismo3.jpeg" alt="Imagen espiritismo">
                 </div>
             </div>
         </div>
 
         <div class="box is-clickable" onclick="toggleDesplegable(this)">
             <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
-                <div><h2 class="title is-4">Tema 2: Quiromancia</h2></div>
+                <div><h2 class="title is-4">Tema 2: Rituales</h2></div>
                 <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
             </div>
             <div class="contenido is-hidden">
                 <div class="contenidoAsignatura">
-                    <p>Exploraremos el arte de leer las líneas de la mano, comprendiendo su relación con la personalidad
-                        y
-                        el futuro de cada individuo. <a href="">Accede al tema</a></p>
-                    <img src="../images/quiromancia.jpg" alt="Imagen espiritismo">
+                    <p>Exploraremos el arte de la invocación, los rituales son la puerta que tenemos al reino extraplanar. Aprenderemos a 
+                        manipular esas puertas a nuestro gusto<a href="">Accede al tema</a></p>
+                    <img src="../images/espiritismo2.jpg" alt="Imagen espiritismo">
                 </div>
             </div>
         </div>
 
         <div class="box is-clickable" onclick="toggleDesplegable(this)">
             <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
-                <div><h2 class="title is-4">Tema 3: Astrología y Horóscopos</h2></div>
+                <div><h2 class="title is-4">Tema 3: Historia del reino espiritual</h2></div>
                 <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
             </div>
             <div class="contenido is-hidden">
                 <div class="contenidoAsignatura">
-                    <p>Descubre cómo la posición de los astros influye en la vida y el destino de las personas, y cómo
-                        interpretar cartas astrales. <a href="">Accede al tema</a></p>
-                    <img src="../images/astrologia2.jpg" alt="Imagen espiritismo">
+                    <p>Descubre la historia del reino extraplanar. Si quieres usar a los espiritus has de saber quienes son, conocerlos en profundidad
+                        para asi poder manipularlos a tu antojo y saber tambien que criaturas es mejor no enfrentar <a href="">Accede al tema</a></p>
+                    <img src="../images/espiritismo4.webp" alt="Imagen espiritismo">
 
                 </div>
             </div>

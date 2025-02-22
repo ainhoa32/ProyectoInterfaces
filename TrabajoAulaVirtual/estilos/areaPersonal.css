@@ -1,3 +1,7 @@
+* {
+  font-family: "Cinzel", serif;
+}
+
 body {
   background-color: #E5D9F2;
 }
@@ -51,7 +55,7 @@ hr {
   background-image: url("../images/historia_brujeria.webp");
 }
 #contendorCardsAsignaturas #imagenAsignatura4 {
-  background-image: url("../images/brujas.jpg");
+  background-image: url("../images/astrologia2.jpg");
 }
 
 .tarea {
