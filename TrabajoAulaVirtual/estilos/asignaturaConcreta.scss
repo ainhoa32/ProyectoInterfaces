@@ -27,7 +27,6 @@ $sombra-caja: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
-// Añadir al principio del archivo
 html {
   background-color: map-get($colores, lila-1) !important;
 }
@@ -36,15 +35,14 @@ body {
   background-color: map-get($colores, lila-1) !important;
 }
 
-// Main content styles - designed to work with existing menu/footer
 .contenedorAsignatura {
-  background-color: map-get($colores, lila-1); // E5D9F2
+  background-color: map-get($colores, lila-1);
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-// Header section
+// Header
 .curso-header {
   display: flex;
   justify-content: space-between;
@@ -73,7 +71,7 @@ body {
     gap: 0.5rem;
 
     figure.image {
-        margin: 0; // Reset margin
+        margin: 0;
     }
 
     .profile-name {
@@ -91,7 +89,7 @@ body {
     background-size: cover;
     background-position: center;
 }
-// Divider
+
 .curso-divider {
   height: 1px;
   background-color: $color-primario;
@@ -99,7 +97,6 @@ body {
   margin: 1rem 0;
 }
 
-// Navigation
 .curso-navigation {
   display: flex;
   justify-content: space-between;
@@ -116,7 +113,7 @@ body {
 
   .nav-link {
     @include flex-center;
-    color: map-get($colores, morado-1); // 6C5AC7
+    color: map-get($colores, morado-1);
     font-size: 0.9rem;
     cursor: pointer;
     text-decoration: none;
@@ -132,7 +129,7 @@ body {
     }
     
     .icon {
-      color: map-get($colores, morado-1); // 6C5AC7
+      color: map-get($colores, morado-1);
     }
   }
 
@@ -146,17 +143,17 @@ body {
       
       li a {
         border-bottom-color: transparent;
-        color: map-get($colores, morado-2); // 5E1675
+        color: map-get($colores, morado-2);
         
         &:hover {
           background-color: transparent;
-          color: map-get($colores, morado-1); // 6C5AC7
+          color: map-get($colores, morado-1);
           border-bottom-color: $color-primario;
         }
       }
       
       li.is-active a {
-        color: map-get($colores, morado-1); // 6C5AC7
+        color: map-get($colores, morado-1);
         border-bottom-color: $color-primario;
         
         &:hover {
@@ -167,12 +164,11 @@ body {
   }
 }
 
-// Content boxes
 .curso-content {
   .content-box {
     @include box-style;
     cursor: pointer;
-    background-color: white !important; // Reset base color
+    background-color: white !important;
     
     &:hover {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -187,11 +183,11 @@ body {
     }
     
     &:nth-child(odd) {
-      background-color: map-get($colores, lila-2) !important; // F5EFFF
+      background-color: map-get($colores, lila-2) !important;
     }
     
     &:nth-child(even) {
-      background-color: map-get($colores, crema-2) !important; // FBF5E5
+      background-color: map-get($colores, crema-2) !important;
     }
     
     .box-header {
@@ -225,7 +221,7 @@ body {
       
       .box-content {
         padding-left: 2.5rem;
-        color: map-get($colores, morado-2); // 5E1675
+        color: map-get($colores, morado-2);
       }
       
       .video-container {
@@ -243,24 +239,23 @@ body {
   }
 }
 .button.is-primary {
-    background-color: map-get($colores, amarillo-1); // Cambiado a amarillo-1
+    background-color: map-get($colores, amarillo-1);
     color: #333;
     
     &:hover {
-      background-color: map-get($colores, morado-2); // Cambiado a morado-2
+      background-color: map-get($colores, morado-2);
       color: white;
     }
   }
   
   .button.is-light {
-    background-color: map-get($colores, lila-1); // Cambiado a lila-1
+    background-color: map-get($colores, lila-1);
     
     &:hover {
-      background-color: map-get($colores, lila-2); // Cambiado a lila-2
+      background-color: map-get($colores, lila-2);
     }
   }
 
-// Fix hover behavior for content boxes to not interfere with existing styles
 .content-box:hover {
   .box-header, .box-title, .box-icon, .icon {
     background-color: transparent;
@@ -301,7 +296,7 @@ body {
     }
 }
 
-// Responsive adjustments
+// Responsividad
 @media screen and (max-width: 768px) {
   .curso-header {
     flex-direction: column;
