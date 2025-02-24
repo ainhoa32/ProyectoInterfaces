@@ -11,35 +11,7 @@
     <link rel="stylesheet" href="../estilos/menu.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <link rel="stylesheet" href="../estilos/asignaturaConcreta.css">
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const $navbarBurgers = Array.from(document.querySelectorAll('.navbar-burger'));
-
-            $navbarBurgers.forEach(el => {
-                el.addEventListener('click', () => {
-                    const target = el.dataset.target;
-                    const $target = document.getElementById(target);
-                    el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
-                });
-            });
-
-            const profesorAudio = document.getElementById('profesorAudio');
-            const imagenProfesor = document.getElementById('imagenProfesor');
-
-            imagenProfesor.addEventListener('click', () => {
-                profesorAudio.currentTime = 0;
-                profesorAudio.play();
-            });
-        });
-
-        function toggleDesplegable(elemento) {
-            elemento.classList.toggle("is-active");
-            const contenido = elemento.querySelector('.contenido');
-            contenido.classList.toggle("is-hidden");
-        }
-    </script>
+    <script src="desplegarMenus.js"></script>
     
 </head>
 <body>

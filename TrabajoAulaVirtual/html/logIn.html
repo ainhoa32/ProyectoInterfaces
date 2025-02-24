@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../estilos/login.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-    <title>Inicio de sesión</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../estilos/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+  <title>Inicio de sesión</title>
 </head>
+
 <body>
   <audio id="backgroundMusic" autoplay loop>
     <source src="../media/Secunda.mp3" type="audio/mpeg">
@@ -30,11 +30,12 @@
       <div class="container">
         <div class="columns is-centered is-vcentered">
           <!-- Bloque de imagen -->
-          <div class="column is-6-tablet is-5-desktop is-4-widescreen image-container is-flex-direction-column is-align-items-center is-justify-content-space-between">
-              <h1 class="title has-text-centered nombre-aula">Escuela Brujería</h1>
-              <button class="button is-medium is-rounded boton-registro">Registrarse</button>
+          <div
+            class="column is-6-tablet is-5-desktop is-4-widescreen image-container is-flex-direction-column is-align-items-center is-justify-content-space-between">
+            <h1 class="title has-text-centered nombre-aula">Escuela Brujería</h1>
+            <button class="button is-medium is-rounded boton-registro">Registrarse</button>
           </div>
-          
+
           <!-- Bloque de login -->
           <div class="column is-6-tablet is-5-desktop is-4-widescreen">
             <form action="" class="box is-shadowless caja-login-grande">
@@ -62,13 +63,13 @@
                   <div class="field">
                     <label for="" class="checkbox label-recuerdame">
                       <input type="checkbox">
-                     Recuérdame
+                      Recuérdame
                     </label>
                   </div>
 
                   <div class="field has-text-centered">
                     <a href="areaPersonal.html" class="button is-medium is-rounded is-centered boton-acceso">
-                        Acceder
+                      Acceder
                     </a>
                   </div>
                 </div>
@@ -81,25 +82,26 @@
   </section>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const audioElement = document.getElementById('backgroundMusic');
-        const playAttempt = audioElement.play();
-        
-        if (playAttempt !== undefined) {
-            playAttempt.then(() => {
-                console.log('Audio reproduciendo automáticamente');
-            }).catch(error => {
-                console.log('Reproducción automática bloqueada por el navegador');
-                const playButton = document.createElement('button');
-                playButton.innerHTML = '<i class="fa fa-play"></i>';
-                playButton.className = 'button is-small is-rounded boton-acceso';
-                playButton.style.position = 'fixed';
-                playButton.style.bottom = '20px';
-                playButton.style.right = '20px';
-                playButton.onclick = () => audioElement.play();
-                document.body.appendChild(playButton);
-            });
-        }
+      const audioElement = document.getElementById('backgroundMusic');
+      const playAttempt = audioElement.play();
+
+      if (playAttempt !== undefined) {
+        playAttempt.then(() => {
+          console.log('Audio reproduciendo automáticamente');
+        }).catch(error => {
+          console.log('Reproducción automática bloqueada por el navegador');
+          const playButton = document.createElement('button');
+          playButton.innerHTML = '<i class="fa fa-play"></i>';
+          playButton.className = 'button is-small is-rounded boton-acceso';
+          playButton.style.position = 'fixed';
+          playButton.style.bottom = '20px';
+          playButton.style.right = '20px';
+          playButton.onclick = () => audioElement.play();
+          document.body.appendChild(playButton);
+        });
+      }
     });
   </script>
 </body>
+
 </html>

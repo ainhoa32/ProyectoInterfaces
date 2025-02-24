@@ -19,7 +19,7 @@ h1{
     .is-active{
         background-color: map-get($colores, lila-1);
     }
-    .navbar-link, .navbar-item, .navbar-dropdown{
+    .navbar-link, .navbar-item, .navbar-dropdown, .navbar-menu{
         background-color: map-get($colores, lila-1) !important;
     }
 
@@ -39,6 +39,8 @@ h1{
     }
 }
 
+
+
 .listaAsignaturaNav, .misCursosNav{
     background-color: map-get($colores, gris-1);
     font-weight: bold;
@@ -46,6 +48,10 @@ h1{
     .navbar-link, .navbar-item, .navbar-dropdown{
         background-color: map-get($colores, gris-1) !important;
         color: #f7d89d !important;
+    }
+
+    .navbar-menu{
+        background-color: map-get($colores, gris-1) !important;
     }
 
     .navbar-burger {
