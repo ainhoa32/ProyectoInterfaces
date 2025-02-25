@@ -2,10 +2,6 @@
   font-family: "Cinzel", serif;
 }
 
-html {
-  background-color: #E5D9F2 !important;
-}
-
 body {
   background-color: #E5D9F2 !important;
 }
@@ -262,7 +258,4 @@ body {
   .curso-navigation .nav-tabs {
     width: 100%;
   }
-}
-body {
-  background-color: #E5D9F2 !important;
 }/*# sourceMappingURL=asignaturaConcreta.css.map */

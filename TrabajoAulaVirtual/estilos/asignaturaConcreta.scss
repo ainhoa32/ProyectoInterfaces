@@ -27,10 +27,6 @@ $sombra-caja: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
-html {
-  background-color: map-get($colores, lila-1) !important;
-}
-
 body {
   background-color: map-get($colores, lila-1) !important;
 }
@@ -325,8 +321,4 @@ body {
       width: 100%;
     }
   }
-}
-
-body {
-  background-color: map-get($colores, lila-1) !important; 
 }
