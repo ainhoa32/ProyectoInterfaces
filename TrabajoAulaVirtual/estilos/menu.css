@@ -18,7 +18,7 @@ h1 {
 .areaPersonalNav .is-active, .asignaturaEspiritismoNav .is-active {
   background-color: #E5D9F2;
 }
-.areaPersonalNav .navbar-link, .areaPersonalNav .navbar-item, .areaPersonalNav .navbar-dropdown, .asignaturaEspiritismoNav .navbar-link, .asignaturaEspiritismoNav .navbar-item, .asignaturaEspiritismoNav .navbar-dropdown {
+.areaPersonalNav .navbar-link, .areaPersonalNav .navbar-item, .areaPersonalNav .navbar-dropdown, .areaPersonalNav .navbar-menu, .asignaturaEspiritismoNav .navbar-link, .asignaturaEspiritismoNav .navbar-item, .asignaturaEspiritismoNav .navbar-dropdown, .asignaturaEspiritismoNav .navbar-menu {
   background-color: #E5D9F2 !important;
 }
 .areaPersonalNav .navbar-link:hover, .areaPersonalNav .navbar-item:hover, .asignaturaEspiritismoNav .navbar-link:hover, .asignaturaEspiritismoNav .navbar-item:hover {
@@ -36,6 +36,9 @@ h1 {
 .listaAsignaturaNav .navbar-link, .listaAsignaturaNav .navbar-item, .listaAsignaturaNav .navbar-dropdown, .misCursosNav .navbar-link, .misCursosNav .navbar-item, .misCursosNav .navbar-dropdown {
   background-color: #8174A0 !important;
   color: #f7d89d !important;
+}
+.listaAsignaturaNav .navbar-menu, .misCursosNav .navbar-menu {
+  background-color: #8174A0 !important;
 }
 .listaAsignaturaNav .navbar-burger, .misCursosNav .navbar-burger {
   color: black;
