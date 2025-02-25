@@ -20,7 +20,7 @@ h1{
         background-color: map-get($colores, lila-1);
     }
     .navbar-link, .navbar-item, .navbar-dropdown, .navbar-menu{
-        background-color: map-get($colores, lila-1) !important;
+        background-color: map-get($colores, lila-1) ;
     }
 
     .navbar-link, .navbar-item{
@@ -32,7 +32,7 @@ h1{
     .navbar-dropdown{
         .navbar-item{
             &:hover{
-                background-color: map-get($colores, morado-2) !important;
+                background-color: map-get($colores, morado-2) ;
                 color: cornsilk;
             }
         }
@@ -46,12 +46,12 @@ h1{
     font-weight: bold;
 
     .navbar-link, .navbar-item, .navbar-dropdown{
-        background-color: map-get($colores, gris-1) !important;
-        color: #f7d89d !important;
+        background-color: map-get($colores, gris-1) ;
+        color: #f7d89d ;
     }
 
     .navbar-menu{
-        background-color: map-get($colores, gris-1) !important;
+        background-color: map-get($colores, gris-1) ;
     }
 
     .navbar-burger {
@@ -60,13 +60,13 @@ h1{
 
     .navbar-link, .navbar-item{
         &:hover{
-            color: cornsilk !important;
+            color: cornsilk ;
         }
     }
     .navbar-dropdown{
         .navbar-item{
             &:hover{
-                background-color: map-get($colores, morado-2) !important;
+                background-color: map-get($colores, morado-2) ;
                 color: cornsilk;
             }
         }

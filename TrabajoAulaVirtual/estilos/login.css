@@ -1,86 +1,42 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    font-family: Cinzel ,Satisfy, sans-serif;
-      
-}
-
-.hero-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Cinzel, Satisfy, sans-serif;
 }
 
 .image-container {
-    position: relative;
-    min-height: 400px;
-    height: 100%;
-    background-image: url('../images/logo4.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 6px;
-    display: flex;
-    align-items: flex-end;
-}
-.image-container.imagen-fondo{
     background-image: url('../images/fondo_bueno.gif');
     background-size: cover;
     background-position: center;
 }
-.image-container .title {
-    position: relative;
-    color:#6c5ac7;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 0.5rem;
-    z-index: 1;
+
+/* Custom colors - only what's necessary */
+.has-text-purple {
+    color: #6c5ac7 ;
 }
-.image-container .title.nombre-aula{
-    color: #EABE6C;
+
+.has-text-gold {
+    color: #EABE6C ;
 }
-.image-container button {
-    position: relative;
-    z-index: 2;
+
+.has-background-cream {
+    background-color: #FBF5E5 ;
 }
-.boton-registro {
-    color: #000;
-    background-color: #eabe6c;
-    border-color: #eabe6c;
-    font-family: Cinzel;
+
+.has-background-gold {
+    background-color: #EABE6C ;
 }
-.label-user{
-    color: #6c5ac7;
-    opacity: 0.7;
-}
-.label-pass{
-    color: #6c5ac7;
-    opacity: 0.7;
-}
-.boton-acceso{
-    color: #fff;
+
+.button.is-purple {
     background-color: #6c5ac7;
-    font-family: Cinzel;
-}
-.label-recuerdame{
-    color: #6c5ac7;
-    opacity: 0.7;
-}
-.caja-login{
-    background-color: #FBF5E5;
-}
-.caja-login-grande{
-    background-color: #EABE6C;
-}
-.caja-login {
-    background-color: #FBF5E5;
+    color: #fff;
 }
 
-.caja-login-grande {
-    background-color: #EABE6C;
+.button.is-gold {
+    background-color: #eabe6c;
+    color: #000;
 }
 
-.input {
+/* Custom input styling that can't be handled by Bulma */
+.input.is-purple {
     background-color: #FBF5E5;
     border: none;
     border-bottom: 2px solid #6c5ac7;
@@ -89,7 +45,7 @@ html, body {
     color: #6c5ac7;
 }
 
-.input:focus {
+.input.is-purple:focus {
     border-bottom-color: #6c5ac7;
     box-shadow: none;
 }

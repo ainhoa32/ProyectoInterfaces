@@ -17,156 +17,161 @@
 </head>
 
 <body>
-  <nav class="navbar misCursosNav" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top asignaturaEspiritismoNav" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="areaPersonal.html">
-        <h1>Mi Escuela</h1>
-      </a>
-      <a role="button" class="navbar-burger" data-target="navbarBasicExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
+        <a class="navbar-item" href="areaPersonal.html">
+            <h1 class="is-size-4-desktop is-size-5-touch">Mi Escuela</h1>
+        </a>
+        <a role="button" class="navbar-burger" data-target="navbarBasicExample">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="areaPersonal.html">Área personal</a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="misCursos.html">Mis Cursos</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="areaAsignatura.html">Espiritismo</a>
-            <a class="navbar-item">Magia Negra</a>
-            <a class="navbar-item">Astrología</a>
-            <a class="navbar-item">Adivinación</a>
-          </div>
+        <div class="navbar-start">
+            <a class="navbar-item" href="areaPersonal.html">Área personal</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="misCursos.html">Mis Cursos</a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="areaAsignatura.html">Espiritismo</a>
+                    <a class="navbar-item">Magia Negra</a>
+                    <a class="navbar-item">Astrología</a>
+                    <a class="navbar-item">Adivinación</a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary"><strong>Ver mi perfil</strong></a>
-            <a class="button is-light">Salir</a>
-          </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary is-responsive">
+                        <strong>Ver mi perfil</strong>
+                    </a>
+                    <a class="button is-light is-responsive">Salir</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
   </nav>
   <div class="mis-cursos">
-    <div class="page-background">
-      <div class="container py-5">
-        <h1 class="title is-3 has-text-centered mb-5">Mis cursos</h1>
-
-        <div class="card-custom is-light-purple">
-          <div class="card-content">
-            <div class="columns is-mobile is-vcentered">
-              <div class="column is-narrow">
-                <div class="course-image">
-                  <img src="../images/espiritismo3.jpeg" alt="Ouija">
+    <div class="section page-background">
+      <div class="container">
+        <h1 class="title is-3 has-text-centered mt-6 mb-6">Mis cursos</h1>
+  
+        <div class="columns is-multiline">
+          <!-- Course Card 1 -->
+          <div class="column is-12">
+            <div class="card card-custom is-light-purple">
+              <div class="card-content">
+                <div class="columns is-mobile is-vcentered">
+                  <div class="column is-2-tablet is-3-mobile">
+                    <figure class="image is-square">
+                      <img src="../images/espiritismo3.jpeg" alt="Ouija" class="is-rounded">
+                    </figure>
+                  </div>
+                  <div class="column">
+                    <p class="title is-4 is-size-7-mobile mb-9 has-text-nowrap">Espiritismo</p>
+                    <p class="subtitle is-6 is-size-7-mobile has-text-nowrap">1º Brujería</p>
+                  </div>
+                  <div class="column is-narrow">
+                    <a href="areaAsignatura.html" class="button button-custom is-size-7-mobile is-light-yellow is-rounded ">Acceder</a>
+                  </div>
                 </div>
-              </div>
-              <div class="column">
-                <p class="title is-4 mb-2">Espiritismo</p>
-                <p class="subtitle is-6 mt-1">1º Brujería</p>
-              </div>
-              <div class="column is-narrow">
-                <a href="areaAsignatura.html" class="button button-custom is-yellow">Acceder</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="card-custom is-yellow">
-          <div class="card-content">
-            <div class="columns is-mobile is-vcentered">
-              <div class="column is-narrow">
-                <div class="course-image">
-                  <img src="../images/magia_negra_china.png" alt="Magia negra china">
+            <!-- Course Card 2 -->
+            <div class="column is-12">
+              <div class="card card-custom is-light-yellow">
+                <div class="card-content">
+                  <div class="columns is-mobile is-vcentered">
+                    <div class="column is-2-tablet is-3-mobile">
+                      <figure class="image is-square">
+                        <img src="../images/magia_negra_china.png" alt="Magia negra china" class="is-rounded">
+                      </figure>
+                    </div>
+                    <div class="column">
+                      <p class="title is-4 mb-9 is-size-7-mobile has-text-nowrap">Magia Negra</p>
+                      <p class="subtitle is-6 is-size-7-mobile has-text-nowrap">1º Brujería</p>
+                    </div>
+                    <div class="column is-narrow">
+                      <a href="areaAsignatura.html" class="button button-custom is-size-7-mobile is-light-purple is-rounded ">Acceder</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="column">
-                <p class="title is-4 mb-2">Magia Negra</p>
-                <p class="subtitle is-6 mt-1">1º Brujería</p>
-              </div>
-              <div class="column is-narrow">
-                <a href="" class="button button-custom is-light-purple">Acceder</a>
-              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="card-custom is-light-purple">
-          <div class="card-content">
-            <div class="columns is-mobile is-vcentered">
-              <div class="column is-narrow">
-                <div class="course-image">
-                  <img src="../images/astrologia.jpg" alt="Astrología">
+            <!-- Course Card 3 -->
+            <div class="column is-12">
+              <div class="card card-custom is-light-purple">
+                <div class="card-content">
+                  <div class="columns is-mobile is-vcentered">
+                    <div class="column is-2-tablet is-3-mobile">
+                      <figure class="image is-square">
+                        <img src="../images/astrologia.jpg" alt="Astrología" class="is-rounded">
+                      </figure>
+                    </div>
+                    <div class="column">
+                      <p class="title is-4 is-size-7-mobile mb-9 has-text-nowrap">Astrología</p>
+                      <p class="subtitle is-6 is-size-7-mobile has-text-nowrap">1º Brujería</p>
+                    </div>
+                    <div class="column is-narrow">
+                      <a href="" class="button button-custom is-size-7-mobile is-light-yellow is-rounded ">Acceder</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="column">
-                <p class="title is-4 mb-2">Astrología</p>
-                <p class="subtitle is-6 mt-1">1º Brujería</p>
-              </div>
-              <div class="column is-narrow">
-                <a href="" class="button button-custom is-yellow">Acceder</a>
-              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="card-custom is-yellow">
-          <div class="card-content">
-            <div class="columns is-mobile is-vcentered">
-              <div class="column is-narrow">
-                <div class="course-image">
-                  <img src="../images/adivinacion.jpg" alt="Magia negra china">
+            <!-- Course Card 4 -->
+            <div class="column is-12">
+              <div class="card card-custom is-light-yellow">
+                <div class="card-content">
+                  <div class="columns is-mobile is-vcentered">
+                    <div class="column is-2-tablet is-3-mobile">
+                      <figure class="image is-square">
+                        <img src="../images/adivinacion.jpg" alt="Adivinación" class="is-rounded">
+                      </figure>
+                    </div>
+                    <div class="column">
+                      <p class="title is-4 is-size-7-mobile mb-9 has-text-nowrap">Adivinación</p>
+                      <p class="subtitle is-6 is-size-7-mobile has-text-nowrap">1º Brujería</p>
+                    </div>
+                    <div class="column is-narrow">
+                      <a href="" class="button button-custom is-size-7-mobile is-light-purple is-rounded ">Acceder</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="column">
-                <p class="title is-4 mb-2">Adivinación</p>
-                <p class="subtitle is-6 mt-1">1º Brujería</p>
-              </div>
-              <div class="column is-narrow">
-                <a href="" class="button button-custom is-light-purple">Acceder</a>
-              </div>
             </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
-  <footer class="misCursosFooter">
-    <h3><b>Escuela paquito</b></h3>
-    <div id="contenedorFooter">
-      <div id="ubicacion">
-        <div>
-          Si te animas a venir a las clases presenciales:
-          <br>
-          C/ de Sta. Irene, 4, Cdad. Lineal, 28017 Madrid
+  <footer class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h3 class="title is-4">Escuela paquito</h3>
+          <div class="content">
+            <h4 class="subtitle is-5">Ubicación</h4>
+            <p>Si te animas a venir a las clases presenciales:</p>
+            <p>C/ de Sta. Irene, 4, Cdad. Lineal, 28017 Madrid</p>
+            <div class="is-16by9">
+              <iframe class="has-ratio" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.695632133835!2d-3.6539199!3d40.4192794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f599699f1ab%3A0x83554f35d5502a11!2sIES%20Francisco%20de%20Goya!5e0!3m2!1ses!2ses!4v1707900000000"></iframe>
+            </div>
+          </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.695632133835!2d-3.6539199!3d40.4192794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f599699f1ab%3A0x83554f35d5502a11!2sIES%20Francisco%20de%20Goya!5e0!3m2!1ses!2ses!4v1707900000000"
-          frameborder="0">
-        </iframe>
-      </div>
-
-      <div id="contactos">
-        Encuentranos en:
-        <div id="logos">
-          <div class="icons icon1">
-          </div>
-          <div class="icons icon2">
-          </div>
-          <div class="icons icon3">
-          </div>
-          <div class="icons icon4">
+        <div class="column">
+          <h4 class="subtitle is-5">Encuentranos en:</h4>
+          <div class="buttons">
+            <a class="button is-medium"><span class="icon"><i class="icons icon1"></i></span></a>
+            <a class="button is-medium"><span class="icon"><i class="icons icon2"></i></span></a>
+            <a class="button is-medium"><span class="icon"><i class="icons icon3"></i></span></a>
+            <a class="button is-medium"><span class="icon"><i class="icons icon4"></i></span></a>
           </div>
         </div>
       </div>
-
     </div>
   </footer>
 </body>
