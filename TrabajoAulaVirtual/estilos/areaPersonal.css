@@ -46,16 +46,16 @@ hr {
   background-position: center;
 }
 #contendorCardsAsignaturas #imagenAsignatura1 {
-  background-image: url("../images/cartas.jpg");
+  background-image: url("../images/espiritismo3.jpeg");
 }
 #contendorCardsAsignaturas #imagenAsignatura2 {
-  background-image: url("../images/espiritismo.jpg");
+  background-image: url("../images/magia_negra_china.png");
 }
 #contendorCardsAsignaturas #imagenAsignatura3 {
-  background-image: url("../images/historia_brujeria.webp");
+  background-image: url("../images/astrologia.jpg");
 }
 #contendorCardsAsignaturas #imagenAsignatura4 {
-  background-image: url("../images/astrologia2.jpg");
+  background-image: url("../images/adivinacion.jpg");
 }
 
 .tarea {
