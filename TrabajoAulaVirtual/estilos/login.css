@@ -8,7 +8,6 @@ html, body {
     background-position: center;
 }
 
-/* Custom colors - only what's necessary */
 .has-text-purple {
     color: #6c5ac7 ;
 }
@@ -35,7 +34,6 @@ html, body {
     color: #000;
 }
 
-/* Custom input styling that can't be handled by Bulma */
 .input.is-purple {
     background-color: #FBF5E5;
     border: none;
