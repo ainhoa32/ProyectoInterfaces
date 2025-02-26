@@ -10,6 +10,18 @@
     --crema-2: #FBF5E5;
 }
 
+$colores: (
+    morado-1: #6C5AC7,
+    crema-1: #FBF5E5,
+    amarillo-1: #EABE6C,
+    lila-1: #E5D9F2,
+    lila-2: #F5EFFF,
+    amarillo-2: #FADFA1,
+    morado-2: #5E1675,
+    gris-1: #8174A0,
+    crema-2: #FBF5E5
+);
+
 .shadow {
     box-shadow: 0px 1px 10px black;
 }
@@ -21,6 +33,13 @@ h1{
 
 .borde{
     border: 2px solid #333;
+}
+.borde2{
+    border: 1px solid #333;
+}
+
+*{
+    font-family: Cinzel;
 }
 
 .has-text-morado-1 { color: var(--morado-1) !important; }
@@ -35,38 +54,5 @@ h1{
 .has-background-lila-2 { background-color: var(--lila-2) !important; }
 .has-background-amarillo-1 { background-color: var(--amarillo-1) !important; }
 .has-background-amarillo-2 { background-color: var(--amarillo-2) !important; }
-
-
-// .nav-has-background-gris-1 { 
-//     background-color: var(--gris-1) !important;
-//     color: var(--crema-2) !important;
-//     &:hover{
-//             background-color: var(--morado-2) ;
-//         }
-// }
-
-
-// .navbar-link, .navbar-item, .navbar-dropdown{
-//     color: #f7d89d;
-//     &:hover{
-//         background-color: var(--morado-2) ;
-//         color: cornsilk ;
-//     }
-//     .navbar-item{
-//         &:hover{
-//             background-color: var(--morado-2) ;
-//             color: cornsilk;
-//         }
-//     }
-// }
-
-// .navbar-dropdown{
-//     .navbar-item{
-//         &:hover{
-//             background-color: var(--morado-2) ;
-//             color: cornsilk;
-//         }
-//     }
-// }
 
 $fuente: 'Cinzel', serif;
