@@ -71,6 +71,10 @@ h1 {
   font-weight: 900;
 }
 
+.card.card-custom {
+  border-radius: 20px;
+}
+
 .borde {
   border: 2px solid #333;
 }
