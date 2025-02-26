@@ -1,6 +1,5 @@
 @import "general.scss";
 
-// Only keep essential custom styles that Bulma doesn't provide
 body {
     background-color: map-get($colores, lila-1) ;
 }

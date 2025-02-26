@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="../estilos/menu.css">
+    <!-- <link rel="stylesheet" href="../estilos/menu.css"> -->
     <link rel="stylesheet" href="../estilos/footer.css">
-    <link rel="stylesheet" href="../estilos/areaAsignaturas.css">
+    <link rel="stylesheet" href="../estilos/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
@@ -17,27 +17,27 @@
 </head>
 
 <body>
-    <nav class="navbar listaAsignaturaNav" role="navigation" aria-label="main navigation">
+    <nav class="navbar shadow has-background-gris-1" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="areaPersonal.html"><h1>Mi Escuela</h1></a>
-            <a role="button" class="navbar-burger" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger has-text-crema-2" data-target="navbarBasicExample">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navbarBasicExample" class="navbar-menu has-background-gris-1">
             <div class="navbar-start">
                 <a class="navbar-item" href="areaPersonal.html">Área personal</a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link" href="misCursos.html">Mis Cursos</a>
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="areaAsignatura.html">Espiritismo</a>
-                        <a class="navbar-item">Magia Negra</a>
-                        <a class="navbar-item">Astrología</a>
-                        <a class="navbar-item">Adivinación</a>
+                    <div class="navbar-dropdown has-background-gris-1">
+                        <a class="navbar-item has-background-gris-1" href="areaAsignatura.html">Espiritismo</a>
+                        <a class="navbar-item has-background-gris-1">Magia Negra</a>
+                        <a class="navbar-item has-background-gris-1">Astrología</a>
+                        <a class="navbar-item has-background-gris-1">Adivinación</a>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary"><strong>Ver mi perfil</strong></a>
+                        <a class="button has-background-amarillo-1"><strong>Ver mi perfil</strong></a>
                         <a class="button is-light">Salir</a>
                     </div>
                 </div>
@@ -53,76 +53,84 @@
         </div>
     </nav>
 
-    <div id="contenedorCuerpoAsignatura" class="section">
-        <div class="box is-clickable contenedor" onclick="toggleDesplegable(this)">
-            <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
+    <div class="section has-background-gris-1">
+        <div class="box is-clickable has-background-amarillo-2 borde" onclick="toggleDesplegable(this)">
+            <div class="is-flex is-justify-content-space-between is-align-items-center">
                 <div><h2 class="title is-4">Espiritismo</h2></div>
                 <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
             </div>
             <div class="contenido is-hidden">
-                <div class="contenidoAsignatura">
-                    <p>En esta asignatura descubriras los misterios que entraña el mundo de los espirtus, ese plano paralelo al nuestro que
+                <div class="m-5">
+                    <p class="m-4 has-text-centered">En esta asignatura descubriras los misterios que entraña el mundo de los espirtus, ese plano paralelo al nuestro que
                         guarda criaturas fantasmales y paranormales, con comportamientos que no se rigen por las normas del mundo planar. Aprenderas a controlarlos, identificarlos
                     y prevenirte de ellos </p>
-                    <img src="../images/espiritismo.jpg" alt="Imagen adivinación">
-
+                    <div class="is-flex is-justify-content-center">
+                        <img src="../images/espiritismo.jpg" alt="Imagen adivinación" width="300px">
+                    </div>
                 </div>
 
             </div>
         </div>
 
-        <div class="box is-clickable" onclick="toggleDesplegable(this)">
-            <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
+        <div class="box is-clickable has-background-amarillo-2 borde" onclick="toggleDesplegable(this)">
+            <div class="is-flex is-justify-content-space-between is-align-items-center">
                 <div><h2 class="title is-4">Tema 1: Introduccion al espiritismo</h2></div>
                 <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
             </div>
             <div class="contenido is-hidden">
-                <div class="contenidoAsignatura">
-                    <p>Aprenderás lo mas basico sobre los espiritus menores y como puedes manifestarlos. Solo hablaremos de los tipos mas basicos
+                <div class="m-5">
+                    <p class="m-4 has-text-centered">Aprenderás lo mas basico sobre los espiritus menores y como puedes manifestarlos. Solo hablaremos de los tipos mas basicos
                         y comunes <a href="asignaturaEspiritismo.html">Accede al tema</a></p>
-                    <img src="../images/espiritismo3.jpeg" alt="Imagen espiritismo">
-                </div>
-            </div>
+                        <div class="is-flex is-justify-content-center">
+                            <img src="../images/espiritismo3.jpeg" alt="Imagen espiritismo" width="300px">
+                        </div>
+                        </div>
+                    </div>
         </div>
 
-        <div class="box is-clickable" onclick="toggleDesplegable(this)">
-            <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
+        <div class="box is-clickable has-background-amarillo-2 borde" onclick="toggleDesplegable(this)">
+            <div class="is-flex is-justify-content-space-between is-align-items-center">
                 <div><h2 class="title is-4">Tema 2: Rituales</h2></div>
                 <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
             </div>
             <div class="contenido is-hidden">
-                <div class="contenidoAsignatura">
-                    <p>Exploraremos el arte de la invocación, los rituales son la puerta que tenemos al reino extraplanar. Aprenderemos a 
+                <div class="m-5">
+                    <p class="m-4 has-text-centered">Exploraremos el arte de la invocación, los rituales son la puerta que tenemos al reino extraplanar. Aprenderemos a 
                         manipular esas puertas a nuestro gusto<a href="">Accede al tema</a></p>
-                    <img src="../images/espiritismo2.jpg" alt="Imagen espiritismo">
-                </div>
+                        <div class="is-flex is-justify-content-center">
+
+                        <img src="../images/espiritismo2.jpg" alt="Imagen espiritismo" width="300px">
+                        </div>
+                    </div>
             </div>
         </div>
 
-        <div class="box is-clickable" onclick="toggleDesplegable(this)">
-            <div class="is-flex is-justify-content-space-between is-align-items-center apartado">
+        <div class="box is-clickable has-background-amarillo-2 borde" onclick="toggleDesplegable(this)">
+            <div class="is-flex is-justify-content-space-between is-align-items-center">
                 <div><h2 class="title is-4">Tema 3: Historia del reino espiritual</h2></div>
                 <div class="icon"><img src="../images/angulo-hacia-abajo.png" alt="flecha"></div>
             </div>
             <div class="contenido is-hidden">
-                <div class="contenidoAsignatura">
-                    <p>Descubre la historia del reino extraplanar. Si quieres usar a los espiritus has de saber quienes son, conocerlos en profundidad
+                <div class="m-5">
+                    <p class="m-4 has-text-centered">Descubre la historia del reino extraplanar. Si quieres usar a los espiritus has de saber quienes son, conocerlos en profundidad
                         para asi poder manipularlos a tu antojo y saber tambien que criaturas es mejor no enfrentar <a href="">Accede al tema</a></p>
-                    <img src="../images/espiritismo4.webp" alt="Imagen espiritismo">
+                        <div class="is-flex is-justify-content-center">
 
+                        <img src="../images/espiritismo4.webp" alt="Imagen espiritismo" width="300px">
+                        </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <footer class="footer">
+    <footer class="footer has-background-gris-1 has-text-crema-2 shadow">
         <div class="container">
-          <div class="columns">
-            <div class="column">
-              <h3 class="title is-4">Escuela paquito</h3>
+          <h3 class="title is-4 has-text-crema-2 has-text-centered p-4">Escuela paquito</h3>
+          <div class="columns is-centered is-justify-content-space-between">
+            <div class="column is-narrow">
               <div class="content">
-                <h4 class="subtitle is-5">Ubicación</h4>
+                <h4 class="subtitle is-5 has-text-crema-2">Ubicación</h4>
                 <p>Si te animas a venir a las clases presenciales:</p>
                 <p>C/ de Sta. Irene, 4, Cdad. Lineal, 28017 Madrid</p>
                 <div class="is-16by9">
@@ -130,13 +138,13 @@
                 </div>
               </div>
             </div>
-            <div class="column">
-              <h4 class="subtitle is-5">Encuentranos en:</h4>
+            <div class="column is-narrow">
+              <h4 class="subtitle is-5 has-text-crema-2">Encuentranos en:</h4>
               <div class="buttons">
-                <a class="button is-medium"><span class="icon"><i class="icons icon1"></i></span></a>
-                <a class="button is-medium"><span class="icon"><i class="icons icon2"></i></span></a>
-                <a class="button is-medium"><span class="icon"><i class="icons icon3"></i></span></a>
-                <a class="button is-medium"><span class="icon"><i class="icons icon4"></i></span></a>
+                <a class="button is-medium"><span class="icon icon1"></a>
+                <a class="button is-medium"><span class="icon icon2"></span></a>
+                <a class="button is-medium"><span class="icon icon3"></span></a>
+                <a class="button is-medium"><span class="icon icon4"></span></a>
               </div>
             </div>
           </div>

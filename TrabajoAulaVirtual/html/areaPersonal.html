@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="../estilos/areaPersonal.css">
-    <link rel="stylesheet" href="../estilos/menu.css">
+    <!-- <link rel="stylesheet" href="../estilos/menu.css"> -->
+     <link rel="stylesheet" href="../estilos/general.scss">
     <link rel="stylesheet" href="../estilos/footer.css">
+    <link rel="stylesheet" href="../estilos/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
@@ -16,8 +18,8 @@
 
 </head>
 
-<body>
-    <nav class="navbar areaPersonalNav" role="navigation" aria-label="main navigation">
+<body class="has-background-lila-1">
+    <nav class="navbar shadow has-background-lila-1" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="areaPersonal.html"><h1>Mi Escuela</h1></a>
             <a role="button" class="navbar-burger" data-target="navbarBasicExample">
@@ -27,17 +29,17 @@
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navbarBasicExample" class="navbar-menu has-background-lila-1">
             <div class="navbar-start">
                 <a class="navbar-item" href="areaPersonal.html">Área personal</a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link" href="misCursos.html">Mis Cursos</a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item" href="areaAsignatura.html">Espiritismo</a>
-                        <a class="navbar-item">Magia Negra</a>
-                        <a class="navbar-item">Astrología</a>
-                        <a class="navbar-item">Adivinación</a>
+                        <a class="navbar-item has-background-lila-1" href="areaAsignatura.html">Espiritismo</a>
+                        <a class="navbar-item has-background-lila-1">Magia Negra</a>
+                        <a class="navbar-item has-background-lila-1">Astrología</a>
+                        <a class="navbar-item has-background-lila-1">Adivinación</a>
                     </div>
                 </div>
             </div>
@@ -45,7 +47,7 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary"><strong>Ver mi perfil</strong></a>
+                        <a class="button has-background-amarillo-1"><strong>Ver mi perfil</strong></a>
                         <a class="button is-light">Salir</a>
                     </div>
                 </div>
@@ -53,58 +55,68 @@
         </div>
     </nav>
 
-    <div id="contenedorDescripcion">
-        Te damos la bienvenida a la Escuela Paquito. El colegio de magia con mas renombre a lo largo y ancho del Largo Reino. Fundada por Paco Maguez en 1923, 
+    <div class="columns is-centered m-5 p-6 box borde has-background-lila-1 column has-text-centered">
+            Te damos la bienvenida a la Escuela Paquito. El colegio de magia con mas renombre a lo largo y ancho del Largo Reino. Fundada por Paco Maguez en 1923, 
         el mayor mago que jamás haya conocido la comarca de Castilla y uno de los mas grandes hechiceros del mundo entero.
     </div>
 
-    <div id="contendorCardsAsignaturas" class="columns is-multiline is-centered">
+    <div class="columns is-multiline is-centered m-5 box has-background-lila-1 borde">
         <div class="column is-one-quarter">
-            <div class="card">
-                <div id="imagenAsignatura1" class="imagen-asignatura"></div>
-                <div class="content">Espiritismo</div>
-            </div>
+            <a href="asignaturaEspiritismo.html">
+                <div class="card box">
+                    <img src="../images/espiritismo3.jpeg" alt="espiritismo" class="imagen">
+                    <div class="">Espiritismo</div>
+                </div>
+            </a>
         </div>
         <div class="column is-one-quarter">
-            <div class="card">
-                <div id="imagenAsignatura2" class="imagen-asignatura"></div>
-                <div class="content">Magia Negra</div>
-            </div>
+            <a href="asignaturaEspiritismo.html">
+                <div class="card box">
+                    <img src="../images/magia_negra_china.png" alt="magia" class="imagen">
+                    <div class="content">Magia Negra</div>
+                </div>
+            </a>
         </div>
         <div class="column is-one-quarter">
-            <div class="card">
-                <div id="imagenAsignatura3" class="imagen-asignatura"></div>
-                <div class="content">Astrologia</div>
-            </div>
+            <a href="asignaturaEspiritismo.html">
+                <div class="card box">
+                    <img src="../images/astrologia.jpg" alt="asttrologia" class="imagen">
+                    <div class="content">Astrologia</div>
+                </div>
+            </a>
         </div>
         <div class="column is-one-quarter">
-            <div class="card">
-                <div id="imagenAsignatura4" class="imagen-asignatura"></div>
-                <div class="content">Adivinación</div>
-            </div>
+            <a href="asignaturaEspiritismo.html">
+                <div class="card box">
+                    <img src="../images/adivinacion.jpg" alt="adivinacion" class="imagen">
+                    <div class="content">Adivinación</div>
+                </div>
+            </a>
         </div>
     </div>
 
-    <div id="contenedorTareas">
+    <div class="box borde has-background-lila-1 m-5">
         <h3>Tareas por entregar</h3>
-        <hr>
-        <div class="tarea">
-            <div><b>Trabajo del análisis de cartas de Tarot: </b> Astrología</div>
-            <div class="fechas">01/02/2024 00:00 </div>
-        </div>
-        <hr>
-        <div class="tarea">
-            <div><b>Invocacion de espiritus menores:</b> Espiritismo</div>
-            <div class="fechas">01/02/2024 00:00 </div>
-        </div>
-        <hr>
+        <hr class="has-background-black">
+            <div class="columns is-multiline m-2">
+                <div class="column"><b>Trabajo del análisis de cartas de Tarot: </b> Astrología</div>
+                <div class="column is-flex is-justify-content-flex-end is-align-items-center">
+                    01/02/2024 00:00 
+                </div>
+            </div>
+            <hr class="has-background-black">
+            <div class="columns is-multiline m-2">
+                <div class="column"><b>Invocacion de espiritus menores:</b> Espiritismo</div>
+                <div class="column is-flex is-justify-content-flex-end is-align-items-center">01/02/2024 00:00 </div>
+            </div>
+            <hr class="has-background-black">
     </div>
 
-    <footer class="footer">
+    <footer class="footer has-background-lila-1 shadow">
         <div class="container">
-          <div class="columns">
-            <div class="column">
-              <h3 class="title is-4">Escuela paquito</h3>
+          <h3 class="title is-4 has-text-centered p-4">Escuela paquito</h3>
+          <div class="columns is-centered is-justify-content-space-between">
+            <div class="column is-narrow">
               <div class="content">
                 <h4 class="subtitle is-5">Ubicación</h4>
                 <p>Si te animas a venir a las clases presenciales:</p>
@@ -114,18 +126,18 @@
                 </div>
               </div>
             </div>
-            <div class="column">
+            <div class="column is-narrow">
               <h4 class="subtitle is-5">Encuentranos en:</h4>
               <div class="buttons">
-                <a class="button is-medium"><span class="icon"><i class="icons icon1"></i></span></a>
-                <a class="button is-medium"><span class="icon"><i class="icons icon2"></i></span></a>
-                <a class="button is-medium"><span class="icon"><i class="icons icon3"></i></span></a>
-                <a class="button is-medium"><span class="icon"><i class="icons icon4"></i></span></a>
+                <a class="button is-medium"><span class="icon icon1"></a>
+                <a class="button is-medium"><span class="icon icon2"></span></a>
+                <a class="button is-medium"><span class="icon icon3"></span></a>
+                <a class="button is-medium"><span class="icon icon4"></span></a>
               </div>
             </div>
           </div>
         </div>
-      </footer>
+    </footer>
 
 </body>
 

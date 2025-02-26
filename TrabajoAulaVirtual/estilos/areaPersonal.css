@@ -1,84 +1,81 @@
-* {
-  font-family: "Cinzel", serif;
+:root {
+  --morado-1: #6C5AC7;
+  --crema-1: #FBF5E5;
+  --amarillo-1: #EABE6C;
+  --lila-1: #E5D9F2;
+  --lila-2: #F5EFFF;
+  --amarillo-2: #FADFA1;
+  --morado-2: #5E1675;
+  --gris-1: #8174A0;
+  --crema-2: #FBF5E5;
 }
 
-body {
-  background-color: #E5D9F2;
+.shadow {
+  box-shadow: 0px 1px 10px black;
 }
 
-#contenedorDescripcion,
-#contendorCardsAsignaturas,
-#contenedorTareas {
-  text-align: center;
-  padding: 20px;
-  margin: 30px;
-  background-color: #F5EFFF;
-  border: 1px solid black;
-  border-radius: 10px;
+h1 {
+  font-size: larger;
+  font-weight: 900;
 }
 
-#contenedorTareas {
-  text-align: left;
+.borde {
+  border: 2px solid #333;
 }
 
-hr {
-  background-color: black;
+.has-text-morado-1 {
+  color: var(--morado-1) !important;
 }
 
-#contendorCardsAsignaturas .column {
-  display: grid;
-  gap: 20px;
+.has-text-crema-1 {
+  color: var(--crema-1) !important;
 }
-#contendorCardsAsignaturas .card {
-  background: #FADFA1;
-  border-radius: 10px;
-  border: 1px solid black;
-  overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 10px;
+
+.has-text-crema-2 {
+  color: var(--crema-2) !important;
 }
-#contendorCardsAsignaturas .imagen-asignatura {
+
+.has-background-morado-1 {
+  background-color: var(--morado-1) !important;
+}
+
+.has-background-gris-1 {
+  background-color: var(--gris-1) !important;
+}
+
+.has-background-crema-1 {
+  background-color: var(--crema-1) !important;
+}
+
+.has-background-crema-2 {
+  background-color: var(--crema-2) !important;
+}
+
+.has-background-morado-2 {
+  background-color: var(--morado-2) !important;
+}
+
+.has-background-lila-1 {
+  background-color: var(--lila-1) !important;
+}
+
+.has-background-lila-2 {
+  background-color: var(--lila-2) !important;
+}
+
+.has-background-amarillo-1 {
+  background-color: var(--amarillo-1) !important;
+}
+
+.has-background-amarillo-2 {
+  background-color: var(--amarillo-2) !important;
+}
+
+.imagen {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
-  height: 150px;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-}
-#contendorCardsAsignaturas #imagenAsignatura1 {
-  background-image: url("../images/espiritismo3.jpeg");
-}
-#contendorCardsAsignaturas #imagenAsignatura2 {
-  background-image: url("../images/magia_negra_china.png");
-}
-#contendorCardsAsignaturas #imagenAsignatura3 {
-  background-image: url("../images/astrologia.jpg");
-}
-#contendorCardsAsignaturas #imagenAsignatura4 {
-  background-image: url("../images/adivinacion.jpg");
-}
-
-.tarea {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.tarea .fechas {
-  margin-right: 15px;
-}
-
-@media only screen and (max-width: 770px) {
-  #contendorCardsAsignaturas {
-    justify-content: center;
-    gap: 20px;
-  }
-  #contendorCardsAsignaturas .column {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  #contendorCardsAsignaturas .card {
-    max-width: 230px;
-    width: 100%;
-  }
+  height: 150px !important;
 }/*# sourceMappingURL=areaPersonal.css.map */

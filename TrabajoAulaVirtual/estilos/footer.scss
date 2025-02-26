@@ -1,7 +1,5 @@
 @import "general.scss";
-*{
-    font-family: $fuente;
-}
+
 $imagenes: (
     "../images/twitterIcon.png",
     "../images/instagramIcon.png",
@@ -10,57 +8,10 @@ $imagenes: (
 );
 
 
-footer{
-    box-shadow: 0px 1px 10px black;
-    h2{
-        padding: 30px 0px 0px 30px;
-    }
-    h3{
-        text-align: center;
-        padding: 30px 0px 0px 30px;
-    }
-}
-
-.listaAsignaturaFooter, .misCursosFooter{
-    background-color: #8174A0;
-    color: #FADFA1;
-}
-  
-.areaPersonalFooter, .asignaturaEspiritismoFooter{
-    background-color: #E5D9F2;
-}
-
-#contenedorFooter{
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    #ubicacion, #contactos, .icons{
-        margin: 20px;
-        iframe{
-            margin: 10px;
-        }
-    }
-}
-
-@media only screen and (max-width: 770px) {
-    #logos {
-        display: flex;
-    }
-}
-
-.icons {
-    width: 32px;
-    height: 32px;
-    background-size: cover;
-}
-
-
-
 @for $i from 1 through length($imagenes) {
     .icon#{$i} {
         background-image: url(nth($imagenes, $i));
+        background-size: cover;
     }
 }
 

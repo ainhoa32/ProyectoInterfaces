@@ -1,63 +1,92 @@
-* {
-  font-family: "Cinzel", serif;
+:root {
+  --morado-1: #6C5AC7;
+  --crema-1: #FBF5E5;
+  --amarillo-1: #EABE6C;
+  --lila-1: #E5D9F2;
+  --lila-2: #F5EFFF;
+  --amarillo-2: #FADFA1;
+  --morado-2: #5E1675;
+  --gris-1: #8174A0;
+  --crema-2: #FBF5E5;
 }
 
-footer {
+.shadow {
   box-shadow: 0px 1px 10px black;
 }
-footer h2 {
-  padding: 30px 0px 0px 30px;
-}
-footer h3 {
-  text-align: center;
-  padding: 30px 0px 0px 30px;
+
+h1 {
+  font-size: larger;
+  font-weight: 900;
 }
 
-.listaAsignaturaFooter, .misCursosFooter {
-  background-color: #8174A0;
-  color: #FADFA1;
+.borde {
+  border: 2px solid #333;
 }
 
-.areaPersonalFooter, .asignaturaEspiritismoFooter {
-  background-color: #E5D9F2;
+.has-text-morado-1 {
+  color: var(--morado-1) !important;
 }
 
-#contenedorFooter {
-  padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#contenedorFooter #ubicacion, #contenedorFooter #contactos, #contenedorFooter .icons {
-  margin: 20px;
-}
-#contenedorFooter #ubicacion iframe, #contenedorFooter #contactos iframe, #contenedorFooter .icons iframe {
-  margin: 10px;
+.has-text-crema-1 {
+  color: var(--crema-1) !important;
 }
 
-@media only screen and (max-width: 770px) {
-  #logos {
-    display: flex;
-  }
+.has-text-crema-2 {
+  color: var(--crema-2) !important;
 }
-.icons {
-  width: 32px;
-  height: 32px;
-  background-size: cover;
+
+.has-background-morado-1 {
+  background-color: var(--morado-1) !important;
+}
+
+.has-background-gris-1 {
+  background-color: var(--gris-1) !important;
+}
+
+.has-background-crema-1 {
+  background-color: var(--crema-1) !important;
+}
+
+.has-background-crema-2 {
+  background-color: var(--crema-2) !important;
+}
+
+.has-background-morado-2 {
+  background-color: var(--morado-2) !important;
+}
+
+.has-background-lila-1 {
+  background-color: var(--lila-1) !important;
+}
+
+.has-background-lila-2 {
+  background-color: var(--lila-2) !important;
+}
+
+.has-background-amarillo-1 {
+  background-color: var(--amarillo-1) !important;
+}
+
+.has-background-amarillo-2 {
+  background-color: var(--amarillo-2) !important;
 }
 
 .icon1 {
   background-image: url("../images/twitterIcon.png");
+  background-size: cover;
 }
 
 .icon2 {
   background-image: url("../images/instagramIcon.png");
+  background-size: cover;
 }
 
 .icon3 {
   background-image: url("../images/facebookIcon.png");
+  background-size: cover;
 }
 
 .icon4 {
   background-image: url("../images/linkedinIcon.svg.png");
+  background-size: cover;
 }/*# sourceMappingURL=footer.css.map */

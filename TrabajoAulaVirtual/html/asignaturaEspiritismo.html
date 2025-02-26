@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +12,16 @@
     <link rel="stylesheet" href="../estilos/menu.css">
     <link rel="stylesheet" href="../estilos/footer.css">
     <link rel="stylesheet" href="../estilos/asignaturaConcreta.css">
+    <link rel="stylesheet" href="../estilos/general.scss">
     <script src="../scripts/desplegarMenus.js"></script>
 </head>
-<body class="has-navbar-fixed-top">
-    <nav class="navbar is-fixed-top asignaturaEspiritismoNav" role="navigation" aria-label="main navigation">
+
+<body>
+
+    <nav class="navbar shadow has-background-lila-1" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="areaPersonal.html">
-                <h1 class="is-size-4-desktop is-size-5-touch">Mi Escuela</h1>
+                <h1>Mi Escuela</h1>
             </a>
             <a role="button" class="navbar-burger" data-target="navbarBasicExample">
                 <span></span>
@@ -26,16 +30,17 @@
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navbarBasicExample" class="navbar-menu has-background-lila-1">
             <div class="navbar-start">
                 <a class="navbar-item" href="areaPersonal.html">Área personal</a>
+
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link" href="misCursos.html">Mis Cursos</a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item" href="areaAsignatura.html">Espiritismo</a>
-                        <a class="navbar-item">Magia Negra</a>
-                        <a class="navbar-item">Astrología</a>
-                        <a class="navbar-item">Adivinación</a>
+                        <a class="navbar-item has-background-lila-1" href="areaAsignatura.html">Espiritismo</a>
+                        <a class="navbar-item has-background-lila-1">Magia Negra</a>
+                        <a class="navbar-item has-background-lila-1">Astrología</a>
+                        <a class="navbar-item has-background-lila-1">Adivinación</a>
                     </div>
                 </div>
             </div>
@@ -43,10 +48,8 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary is-responsive">
-                            <strong>Ver mi perfil</strong>
-                        </a>
-                        <a class="button is-light is-responsive">Salir</a>
+                        <a class="button has-background-amarillo-1"><strong>Ver mi perfil</strong></a>
+                        <a class="button is-light">Salir</a>
                     </div>
                 </div>
             </div>
@@ -93,16 +96,16 @@
                     </span>
                 </a>
             </div>
-            
-<div class="column">
-    <div class="tabs is-centered is-boxed is-size-7-mobile">
-        <ul class="is-flex-wrap-wrap">
-            <li class="is-active"><a class="px-2-mobile">Contenido</a></li>
-            <li><a class="px-2-mobile">Calificaciones</a></li>
-        </ul>
-    </div>
-</div>
-            
+
+            <div class="column">
+                <div class="tabs is-centered is-boxed is-size-7-mobile">
+                    <ul class="is-flex-wrap-wrap">
+                        <li class="is-active"><a class="px-2-mobile">Contenido</a></li>
+                        <li><a class="px-2-mobile">Calificaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="column is-narrow">
                 <a class="button is-ghost is-responsive">
                     <span class="icon-text">
@@ -130,7 +133,8 @@
                         </div>
                         <div class="contenido is-hidden">
                             <div class="content mt-4">
-                                <p class="is-size-6-mobile">Con todo lo aprendido en clase tienes que hacer una tarea documentando como se puede invocar a un espiritu menor de tu eleccion</p>
+                                <p class="is-size-6-mobile">Con todo lo aprendido en clase tienes que hacer una tarea
+                                    documentando como se puede invocar a un espiritu menor de tu eleccion</p>
                                 <div class="has-text-centered mt-4">
                                     <button class="button is-primary is-rounded is-fullwidth-mobile">
                                         <span class="icon"><i class="fas fa-plus"></i></span>
@@ -152,7 +156,8 @@
                                 </span>
                             </div>
                             <div class="media-content">
-                                <p class="title is-5 is-size-6-mobile mb-0">Que tipos de espíritus existen y como reconocerlos</p>
+                                <p class="title is-5 is-size-6-mobile mb-0">Que tipos de espíritus existen y como
+                                    reconocerlos</p>
                             </div>
                         </div>
                         <div class="contenido is-hidden">
@@ -178,7 +183,8 @@
                         </div>
                         <div class="contenido is-hidden">
                             <div class="content mt-4">
-                                <p class="is-size-6-mobile">Métodos para identificar diferentes tipos de espíritus...</p>
+                                <p class="is-size-6-mobile">Métodos para identificar diferentes tipos de espíritus...
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -201,7 +207,8 @@
                             <div class="content mt-4">
                                 <div class="video-container has-text-centered">
                                     <video controls class="has-ratio" style="max-width: 100%; margin: 0 auto;">
-                                        <source src="../media/Insym gets terrified by the Summoning Circle.mp4" type="video/mp4">
+                                        <source src="../media/Insym gets terrified by the Summoning Circle.mp4"
+                                            type="video/mp4">
                                         Tu navegador no soporta el elemento de video.
                                     </video>
                                 </div>
@@ -212,11 +219,11 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer has-background-lila-1 shadow">
         <div class="container">
-          <div class="columns">
-            <div class="column">
-              <h3 class="title is-4">Escuela paquito</h3>
+          <h3 class="title is-4 has-text-centered p-4">Escuela paquito</h3>
+          <div class="columns is-centered is-justify-content-space-between">
+            <div class="column is-narrow">
               <div class="content">
                 <h4 class="subtitle is-5">Ubicación</h4>
                 <p>Si te animas a venir a las clases presenciales:</p>
@@ -226,18 +233,19 @@
                 </div>
               </div>
             </div>
-            <div class="column">
+            <div class="column is-narrow">
               <h4 class="subtitle is-5">Encuentranos en:</h4>
               <div class="buttons">
-                <a class="button is-medium"><span class="icon"><i class="icons icon1"></i></span></a>
-                <a class="button is-medium"><span class="icon"><i class="icons icon2"></i></span></a>
-                <a class="button is-medium"><span class="icon"><i class="icons icon3"></i></span></a>
-                <a class="button is-medium"><span class="icon"><i class="icons icon4"></i></span></a>
+                <a class="button is-medium"><span class="icon icon1"></a>
+                <a class="button is-medium"><span class="icon icon2"></span></a>
+                <a class="button is-medium"><span class="icon icon3"></span></a>
+                <a class="button is-medium"><span class="icon icon4"></span></a>
               </div>
             </div>
           </div>
         </div>
-      </footer>
+    </footer>
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 </body>
+
 </html>
