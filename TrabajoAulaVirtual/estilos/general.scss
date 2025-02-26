@@ -36,6 +36,10 @@ $colores: (
     crema-2: #FBF5E5
 );
 
+*{
+    font-family: Cinzel;
+}
+
 .shadow {
     box-shadow: 0px 1px 10px black;
 }
@@ -54,8 +58,11 @@ h1{
 
 $fuente: 'Cinzel', serif;
 
-*{
-    font-family: Cinzel;
+.imagen{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 150px !important;
 }
 
 $imagenes: (
